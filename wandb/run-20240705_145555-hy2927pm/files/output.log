@@ -1,0 +1,30 @@
+
+
+Loading checkpoint shards: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:02<00:00,  1.34it/s]
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/spaces/box.py:127: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+finish loading the model
+env=gym.make.....
+obs, info = env.reset()
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/utils/passive_env_checker.py:137: UserWarning: [33mWARN: The obs returned by the `reset()` method was expecting a numpy array, actual type: <class 'tensorflow.python.framework.ops.EagerTensor'>
+  logger.warn(
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/spaces/box.py:227: UserWarning: [33mWARN: Casting input x to numpy array.
+  logger.warn("Casting input x to numpy array.")
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/utils/passive_env_checker.py:137: UserWarning: [33mWARN: The obs returned by the `reset()` method was expecting a numpy array, actual type: <class 'jaxlib.xla_extension.ArrayImpl'>
+  logger.warn(
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/utils/passive_env_checker.py:165: UserWarning: [33mWARN: The obs returned by the `reset()` method is not within the observation space.
+  logger.warn(f"{pre} is not within the observation space.")
+Traceback (most recent call last):
+  File "/home/yunqiliu/octo/examples/eval_mistral_vla.py", line 304, in <module>
+    app.run(main)
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/absl/app.py", line 308, in run
+    _run_main(main, args)
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/absl/app.py", line 254, in _run_main
+    sys.exit(main(argv))
+             ^^^^^^^^^^
+  File "/home/yunqiliu/octo/examples/eval_mistral_vla.py", line 195, in main
+    my_actions = output_data['pred_actions']
+                 ^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'output_data' where it is not associated with a value

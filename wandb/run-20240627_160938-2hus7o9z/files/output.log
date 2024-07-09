@@ -1,0 +1,54 @@
+I0627 16:09:46.187199 133032953341760 03_eval_finetuned.py:49] Loading finetuned model...
+Fetching 8 files: 100%|███████████████████████████████████████████████████████| 8/8 [00:00<00:00, 27235.74it/s]
+error: path is None
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+W0627 16:09:50.135148 133032953341760 block_transformer.py:295] Using old attention computation from released December models.
+I0627 16:09:56.665566 133032953341760 checkpointer.py:164] Restoring item from /home/yunqiliu/.cache/huggingface/hub/models--rail-berkeley--octo-small/snapshots/03d88976c54a58e10480d2043a8c762b35bc2611/270000/default.
+I0627 16:09:57.299633 133032953341760 checkpointer.py:166] Finished restoring checkpoint from /home/yunqiliu/.cache/huggingface/hub/models--rail-berkeley--octo-small/snapshots/03d88976c54a58e10480d2043a8c762b35bc2611/270000/default.
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/spaces/box.py:127: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/utils/passive_env_checker.py:137: UserWarning: [33mWARN: The obs returned by the `reset()` method was expecting a numpy array, actual type: <class 'tensorflow.python.framework.ops.EagerTensor'>
+  logger.warn(
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/spaces/box.py:227: UserWarning: [33mWARN: Casting input x to numpy array.
+  logger.warn("Casting input x to numpy array.")
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/utils/passive_env_checker.py:137: UserWarning: [33mWARN: The obs returned by the `reset()` method was expecting a numpy array, actual type: <class 'jaxlib.xla_extension.ArrayImpl'>
+  logger.warn(
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/utils/passive_env_checker.py:165: UserWarning: [33mWARN: The obs returned by the `reset()` method is not within the observation space.
+  logger.warn(f"{pre} is not within the observation space.")
+W0627 16:09:58.762115 133032953341760 octo_model.py:533] 'observations' is missing items compared to example_batch: {'pad_mask_dict/timestep', 'pad_mask_dict/image_wrist', 'timestep', 'pad_mask_dict/proprio', 'image_wrist', 'pad_mask', 'pad_mask_dict/image_primary'}
+E0627 16:09:58.762570 133032953341760 octo_model.py:549] 'observations' contains mismatched shapes compared to example_batch: {
+    proprio: '(1, 1, 14) != (1, 2, 8)',
+}
+Traceback (most recent call last):
+  File "/home/yunqiliu/octo/examples/03_eval_finetuned.py", line 122, in <module>
+    app.run(main)
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/absl/app.py", line 308, in run
+    _run_main(main, args)
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/absl/app.py", line 254, in _run_main
+    sys.exit(main(argv))
+             ^^^^^^^^^^
+  File "/home/yunqiliu/octo/examples/03_eval_finetuned.py", line 103, in main
+    actions = policy_fn(jax.tree_map(lambda x: x[None], obs), task)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunqiliu/octo/examples/octo/utils/train_callbacks.py", line 143, in wrapped
+    return f(*args, rng=key, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunqiliu/octo/examples/octo/model/octo_model.py", line 204, in sample_actions
+    transformer_outputs = self.run_transformer(
+                          ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunqiliu/octo/examples/octo/model/octo_model.py", line 153, in run_transformer
+    _verify_shapes(
+  File "/home/yunqiliu/octo/examples/octo/model/octo_model.py", line 559, in _verify_shapes
+    raise AssertionError(f"{name} does not match example batch.")
+AssertionError: observations does not match example batch.
+--------------------
+For simplicity, JAX has removed its internal frames from the traceback of the following exception. Set JAX_TRACEBACK_FILTERING=off to include these.
+finish loading the model
+Key 'action' not found in dataset_statistics
+metadata.keys dict_keys(['austin_buds_dataset_converted_externally_to_rlds', 'austin_sailor_dataset_converted_externally_to_rlds', 'austin_sirius_dataset_converted_externally_to_rlds', 'bc_z', 'berkeley_autolab_ur5', 'berkeley_cable_routing', 'berkeley_fanuc_manipulation', 'bridge_dataset', 'cmu_stretch', 'dlr_edan_shared_control_converted_externally_to_rlds', 'fractal20220817_data', 'furniture_bench_dataset_converted_externally_to_rlds', 'iamlab_cmu_pickup_insert_converted_externally_to_rlds', 'jaco_play', 'kuka', 'language_table', 'nyu_door_opening_surprising_effectiveness', 'nyu_franka_play_dataset_converted_externally_to_rlds', 'roboturk', 'stanford_hydra_dataset_converted_externally_to_rlds', 'taco_play', 'toto', 'ucsd_kitchen_dataset_converted_externally_to_rlds', 'utaustin_mutex', 'viola'])
+obs keys dict_keys(['image_primary', 'proprio'])
+else metadata
+is proprio in obs? True

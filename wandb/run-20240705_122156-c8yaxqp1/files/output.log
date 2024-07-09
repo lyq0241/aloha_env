@@ -1,0 +1,122 @@
+
+
+Loading checkpoint shards: 100%|█████████████████████████████████████████████████████████████████| 3/3 [00:02<00:00,  1.20it/s]
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/spaces/box.py:127: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/utils/passive_env_checker.py:137: UserWarning: [33mWARN: The obs returned by the `reset()` method was expecting a numpy array, actual type: <class 'tensorflow.python.framework.ops.EagerTensor'>
+  logger.warn(
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/spaces/box.py:227: UserWarning: [33mWARN: Casting input x to numpy array.
+  logger.warn("Casting input x to numpy array.")
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/utils/passive_env_checker.py:137: UserWarning:
+finish loading the model
+try loading some data for initialization
+finish loading the data for initialization
+metadata is dict_keys(['task_description', 'scene_description', 'mean', 'std', 'frame_number', 'image_paths', 'actions', 'clip_description', 'trajectory_id', 'view'])
+env=gym.make.....
+obs, info = env.reset()
+iteration starts: we will sample actions
+start sampling actions
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/utils/passive_env_checker.py:137: UserWarning: [33mWARN: The obs returned by the `reset()` method was expecting a numpy array, actual type: <class 'jaxlib.xla_extension.ArrayImpl'>
+  logger.warn(
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/utils/passive_env_checker.py:165: UserWarning: [33mWARN: The obs returned by the `reset()` method is not within the observation space.
+  logger.warn(f"{pre} is not within the observation space.")
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:2 for open-end generation.
+cuda:0
+cuda:0
+cuda:0
+cuda:0
+cuda:0
+cuda:0
+cuda:0
+cuda:0
+cuda:0
+cuda:0
+cuda:0
+cuda:0
+cuda:0
+cuda:0
+cuda:0
+cuda:0
+cuda:0
+cuda:0
+cuda:0
+cuda:0
+cuda:0
+cuda:0
+cuda:0
+cuda:0
+cuda:0
+cuda:0
+cuda:0
+cuda:0
+cuda:0
+cuda:0
+cuda:0
+instance data keys dict_keys(['task_description', 'scene_description', 'mean', 'std', 'clip_description', 'actions'])
+Traceback (most recent call last):
+  File "/home/yunqiliu/octo/examples/03_eval_finetuned_copy_copy.py", line 289, in <module>
+    app.run(main)
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/absl/app.py", line 308, in run
+    _run_main(main, args)
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/absl/app.py", line 254, in _run_main
+    sys.exit(main(argv))
+             ^^^^^^^^^^
+  File "/home/yunqiliu/octo/examples/03_eval_finetuned_copy_copy.py", line 262, in main
+    actions = sample_actions(actions, metadata, model_vq, model_vla, tokenizer, device)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunqiliu/octo/examples/03_eval_finetuned_copy_copy.py", line 83, in sample_actions
+    cur_instance_data = pipeline.call_models(cur_instance_data, model_vq, model_vla, tokenizer, TATSModelArguments, DataArguments, device)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunqiliu/octo/examples/robot-pipeline/pipeline_simulation_with_gt.py", line 111, in call_models
+    output_frames = model_vq.decode_video(output_video_tokens_pred).squeeze(0).permute(1,0,2,3).detach().to(device) # 6, 3, 256, 256
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunqiliu/octo/examples/robot-pipeline/tokenizer/tats_vision_action.py", line 782, in decode_video
+    return self.decoder(h) # B, T, C, H, W
+           ^^^^^^^^^^^^^^^
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunqiliu/octo/examples/robot-pipeline/tokenizer/tats_vision_action.py", line 411, in forward
+    h = block.res1(h)
+        ^^^^^^^^^^^^^
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunqiliu/octo/examples/robot-pipeline/tokenizer/tats_vision_action.py", line 442, in forward
+    h = self.conv2(h)
+        ^^^^^^^^^^^^^
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunqiliu/octo/examples/robot-pipeline/tokenizer/tats_vision_action.py", line 475, in forward
+    return self.conv(F.pad(x, self.pad_input, mode=self.padding_type))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/torch/nn/functional.py", line 4522, in pad
+    return torch._C._nn.pad(input, pad, mode, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 68.00 MiB. GPU
+<s><bott_i> Move the can to the back right corner of the table<eott_i><bots_i> Initial scene showing a robot arm made of extruded aluminum joints, gripping a can near a bowl on a table.<eots_i><botp_i><eotp_i><bov_i><va6081><va3264><va3295><va2077><va4940><va8182><va178><va14346><va15349><va14260><va12065><va5250><va16252><va6823><va9479><va14077><va15183><va10222><va12016><va1611><va5747><va1492><va7492><va10889><va7016><va14436><va10993><va7924><va9405><va11612><va13402><va9809><va13511><va14780><va16321><va10635><va12618><va4211><va9772><va9369><va4548><va10602><va5598><va15854><va12119><va12632><va6201><va12796><va6759><va14929><va14738><va12131><va1168><va12740><va10911><va10732><va16344><va6397><va10195><va14371><va2049><va788><va3316><va15976><va427><va6896><va12315><va10702><va14902><va4081><va1303><va298><va12116><va11000><va2464><va8802><va7227><va15073><va318><va1031><va7495><va10842><va3576><va1308><va6099><va2391><va7536><va8166><va5397><va15190><va9619><va12382><va6003><va10997><va16219><va13379><va8490><va10056><va4181><va3138><va7476><va8445><va8265><va1251><va4964><va6919><va11506><va12141><va1881><va4033><va2485><va2229><va7260><va15818><va1008><va11604><va11615><va9945><va1802><va6609><va11495><va15294><va2961><va426><va9224><va14532><va5323><va4845><va12195><va1992><va15446><va13328><va8465><va13258><va1565><va2664><va1051><va4826><va6207><va15155><va10041><va11549><va16061><va13311><va15461><va380><va9190><va15968><va2882><va1514><va5101><va9616><va14823><va7818><va7815><va14292><va15665><va5724><va12471><va13507><va7047><va2450><va14728><va14264><va11841><va1794><va5991><va2086><va10093><va8429><va12543><va15788><va363><va4525><va12107><va15286><va4276><va4035><va10206><va7136><va14263><va10358><va12679><va1472><va7109><va13435><va11545><va9577><va6793><va10898><va6810><va5553><va2215><va3290><va11423><va13428><va2375><va8804><va11631><va6125><va2653><va12148><va10021><va11637><va10321><va5524><va3021><va12071><va4349><va220><va13178><va14969><va15527><va2542><va13393><va9470><va13002><va1676><va3931><va859><va3216><va9926><va10701><va8569><va9400><va15909><va14456><va9185><va2996><va15058><va4195><va8193><va12716><va1578><va9208><va4717><va10912><va4933><va6503><va7716><va14048><va7898><va8649><va12988><va9890><va4980><va12745><va3523><va4166><va16082><va12225><va13555><va9803><va14951><va13712><va8425><va14531><va15260><va15660><va16053><va16113><va13786><va9000><va13755><va10282><va13758><va10802><va8737><va14348><va10035><va1070><va11722><va15273><va4865><va16341><va14483><va6574><va12994><va4040><va4686><va10946><va3227><va159><va2737><va5834><va8731><va14123><va16254><va15148><va4020><va5784><va11440><va4200><va1831><va12><va4716><va4242><va6836><va12660><va14746><va6625><va12441><va3779><va12488><va2780><va16172><va16132><va11363><va515><va10019><va14510><va15462><va14051><va10995><va1135><va7501><va9373><va13242><va13260><va6219><va9965><va3593><va3912><va9007><va4862><va10247><va5301><va13494><va3934><va15126><va9167><va11286><va13468><va5031><va364><va4675><va4860><va1581><va8140><va2244><va956><va1825><va2159><va721><va8413><va11396><va9721><va4839><va13194><va15156><va2315><va11241><va7179><va8074><va987><va12891><va15531><va16260><va10477><va10147><va2167><va8125><va9671><va6782><va1566><va11752><va14187><va6184><va15130><va5857><va10683><va11353><va6862><va7085><va14980><va6771><va15815><va10753><va8473><va12020><va7866><va12693><va8636><va13227><va7238><va8603><va12848><va10539><va4116><va13034><va4990><va7405><va14615><va2532><va13196><va9774><va10541><va5684><va8130><va9790><va8070><va9777><va7154><va15858><va15337><va351><va13210><va690><va888><va15604><va7100><va6055><va4972><va8772><va3849><va5877><va5914><va11171><va15542><va15808><va13908><va5471><va7811><va3752><va9597><va7788><va12338><va13630><va3155><va2511><va14949><va758><va501><va8360><va2691><va13910><va9676><va9170><va9533><va3595><va3368><va4058><va11672><va9307><va6489><va2357><va7949><va1312><va15783><va14905><va6245><va15106><va15050><va13857><va4294><va3686><va15403><va2143><va10453><va12970><va5053><va13797><va5590><va119><va12524><va10511><va10077><va15376><va12712><va1858><va12669><va12952><va3491><va13763><va4907><va9738><va11507><va8945><va13622><va8799><va3123><va2270><va11821><va237><va5728><va12072><va4277><va5879><va11624><va8950><va626><va15940><va14801><va5373><va6326><va1944><va15113><va6465><va731><va13130><va9677><va9897><va9119><va13173><va8856><va13374><va5492><va1026><va3910><va6644><va15518><va9855><va10831><va2185><va3436><va11963><va3232><va5529><va3952><va4053><va3131><va8909><va8072><va11759><va11165><va15153><va15663><va1635><va8964><va806><va7674><va7072><va11351><va8317><va9380><va610><va11433><va4522><va2110><va14792><va12197><va4591><va8199><va476><va3312><va14924><va15989><va13998><va665><va8457><va4412><va7382><va10844><va13732><va6684><va174><va8813><va7><va703><va13182><va7011><va9956><va5462><va14964><va13018><va2793><va995><va5011><va13844><va4125><va10822><va12626><va15359><va1367><va12391><va3841><va13874><va2898><va14116><va13256><va4232><va12371><va4390><va8435><va12493><va5070><va9914><va14733><va11013><va6876><va2607><va14594><va5664><va7677><va2364><va5433><va6086><va1836><va14504><va4163><va15030><va9689><va16096><va6588><va3379><va11062><va8851><va11588><va3796><va14869><va1201><va14559><va13452><va606><va11725><va9979><va6504><va14280><va13255><va11109><va14501><va6313><va9760><va8515><va5541><va9609><va11968><va10415><va8210><va3698><va3195><va15707><va11882><va1598><va3791><va7366><va6399><va209><va6418><va5611><va8616><va4305><va10309><va12147><va8019><va15655><va6337><va3711><va669><va599><va12436><va13952><va12783><va15161><va2075><va7900><va13061><va1069><va10277><va1958><va2930><va14507><va14819><va14952><va185><va14936><va2641><va431><va8879><va3750><va14362><va6136><va7381><va2869><va5511><va2250><va3525><va2160><va13269><va11593><va14258><va10827><va5811><va2515><va9365><va9681><va16379><va5955><va8329><va8254><va6685><va11970><va1632><va6155><va9734><va12856><va14978><va11164><va11919><va8979><va11275><va2324><va1874><va6460><va14699><va12528><va8933><va11661><va3974><va11254><va311><va13781><va3424><va1735><va4360><va1983><va8204><va2684><va4018><va8333><va4436><va2622><va11994><va11946><va5936><va4888><va9476><va8100><va14360><va14430><va6586><va4479><va4647><va14172><va13842><va13825><va3942><va5460><va16249><va12860><va13401><va14160><va16018><va10806><va14982><va2029><va2210><va5557><va3503><va8710><va1335><va9877><va5970><va4706><va12385><va1065><va4984><va13872><va7551><va8159><va3755><va10491><va8529><va6716><va12993><va8764><va6318><va7026><eov_i><boa_i><va9617><va11252><va7476><va5333><va13983><va6504><va10629><va3260><va2749><va6705><va8186><va13983><va481><va13679><va1239><va11252><va764><va8186><va2497><va3971><va12661><va11634><va11775><va453><va7067><va763><va4735><va15782><va2592><va11775><va2453><va8186><va763><va8431><va3454><va8239><va2242><va4019><va5333><va15346><va15528><va9421><eoa_i><botp_o> Arm lowered slightly. Gripper rotates slightly towards object; Gripper maintains open position.<eotp_o><bov_o><va13625>.<eotp_o><bov_o><va15221><va5771><va13220><va8211><va13006><va13006><va13006><va13006><va13006><va9677><va9202><va2360><va797><va13404><va13449><va5197><va9670><va8299><va15850><va12147><va2430><va2605><va6852><va7946><va5866><va9728><va3651><va2218><va9718><va9718><va7070><va9670><va8299><va7300><va14162><va14087><va13374><va7946><va7946><va7946><va7946><va1522><va5037><va3998><va6487><va1522><va11348><va4024><va8220><va13447><va16088><va3561><va15112><va7946><va7946><va7946><va7946><va5860><va7800><va13749><va13756><va10225><va9718><va5791><va8220><va7946><va8220><va8220><va7946><va7946><va7946><va6517><va7946><va10937><va15477><va7><va9383><va765><va13756><va11185><va13374><va8220><va8220><va8220><va7946><va7946><va7946><va7946><va7946><va11346><va4088><va1722><va1543><va13696><va7816><va6985><va3638><va6833><va8220><va8220><va7946><va7946><va7946><va7946><va7946><va7946><va6435><va12148><va10225><va10328><va3636><va15678><va2965><va9526><va11214><va8220><va8220><va7946><va7946><va7946><va7946><va14162><va2609><va7257><va6677><va6487><va6487><va6154><va5256><va1245><va8220><va8220><va7946><va7946><va7946><va8220><va8220><va14162><va2426><va1373><va624><va1522><va1522><va5056><va10760><va8220><va8220><va8220><va8220><va7946><va7946><va7946><va7946><va8220><va8535><va3738><va4083><va7723><va13404><va9718><va12790><va13917><va8220><va8220><va8220><va7946><va7946><va7946><va8220><va8220><va13321><va3010><va9383><va7723><va12844><va2218><va7800><va6648><va13917><va8220><va7946><va7946><va7946><va8220><va8220><va8220><va10667><va11589><va15090><va7723><va7723><va3738><va13382><va7787><va5838><va11214><va8220><va7946><va7946><va8220><va8220><va8220><va12445><va11727><va6267><va15090><va9691><va15196><va14663><va15081><va13382><va14732><va8220><va7946><va7946><va8220><va8220><va8220><va10667><va10667><va10667><va15090><va12844><va13382><va2410><va6305><va7163><va7935><va4491><va8220><va8220><va8220><va8220><va13374><va11250><va11589><va10491><va11024><va15518><va14442><va13756><va14901><va5889><va4754><va15672><va8220><va8220><va8220><va8220><va10667><va10667><va11589><va11589><va11589><va15090><va14442><va15221><va3738><va11040><va8220><va8220><va8220><va8220><va8220><va2854><va11250><va2854><va5284><va7300><va6517><va177><va100><va5763><va15147><va14313><va722><va16090><va8220><va8352><va8220><va7946><va5402><va3062><va15090><va7925><va11436><va2469><va3577><va581><va10322><va11040><va348><va9908><va1203><va10645><va3866><va7946><va14805><va11250><va7480><va12793><va11678><va9437><va9230><va4382><va7576><va9826><va15806><va6464><va1203><va13006><va5419><va8299><va2854><va11589><va14805><va2272><va5286><va13538><va9230><va8299><va13006><va1745><va7390><va7509><va14065><va215><va7024><va2869><va9837><va14766><va15575><va3794><va11994><va3412><va8414><va8299><va13006><va1745><va4353><va7390><va15018><va15018><va15018><va215><va13297><va10970><va11748><va3894><va15664><va10211><va7808><va2983><va8352><va1745><va7390><va7390><va15018><va15018><va15018><va215><va215><va10734><va6534><va15422><va1194><va16026><va98><va15105><va14><va11214><va15018><va15018><va3342><va7390><va15018><va15018><va6045><va3866><va14697><va14442><va15537><va8048><va14389><va7573><va4921><va12642><va12642><va15018><va15018><va15018><va15018><va2032><va8843><va15018><va5313><va9044><va9718><va6232><va5621><va5621><va3323><va3342><va15018><va3420><va215><va7390><va15018><va15018><va15018><va15018><va1885><va5425><va9718><va12927><va3135><va3135><va10309><va4247><va8843><va15018><va15018><va15018><va15018><va15018><va15018><va13739><va15422><va5889><va9718><va15579><va4083><va16026><va13218><va8274><va3342><va15018><va15018><va15018><va15018><va15018><va15018><va13739><va13588><va6548><va15430><va15579><va14998><va3738><va7037><va3180><va3342><va15018><va15018><va3342><va215><va215><va14065><va8436><va15018><va11348><va6873><va9718><va4083><va7723><va14529><va8706><va13297><va215><va215><va215><va15018><va15018><va15018><va215><va3784><va1522><va4322><va9718><va5425><va9013><va6459><va13615><va10926><va15951><va15018><va15018><va215><va8274><va15018><va15018><va215><va1522><va10973><va15537><va15307><va15664><va15196><va12720><va12720><va8095><va8843><va15018><va13739><va15018><va15018><va8274><va593><va15018><va15018><va3866><va5889><va9718><va15196><va14914><va215><va3164><va215><va215><va215><va215><va215><va215><va6093><va792><va9747><va13143><va15175><va1522><va215><va1576><va2245><va16090><va6305><va215><va215><va215><va15018><va15018><va5407><va6487><va3265><va8894><va14860><va10645><va1315><va5072><va16232><va1991><va3135><va9377><va8436><va215><va215><va215><va7959><va9398><va7089><va1581><va3342><va6998><va8751><va4414><va11893><va9044><va2461><va9469><va729><va14729><va7234><va4100><va1210><va8100><va6487><va6706><va3342><va215><va6262><va8110><va3543><va11509><va13720><va8639><va8639><va5407><va933><va6575><va1850><va14529><va7><va15870><va6402><va6575><va8639><va10734><va15084><va3543><va795><va11555><va6004><va9782><va9718><va13838><va3710><va12345><va10364><va7723><va4323><va3531><va9088><va10734><va9782><va14527><va9782><va3342><va11555><va13748><va2634><va9454><va15378><va13143><va8733><va16026><va7565><va554><va12440><va729><va9782><va4400><va9782><va13588><va13588><va14268><va12915><va15623><va14898><va9747><va4668><va1102><va14442><va927><va16221><va9782><va15123><va10489><va4662><va1177><va10927><va15518><va729><va7458><va16034><va4675><va6534><va14617><va8383><va9691><va3208><va12642><va9740><va5214><va6004><va6004><va5705><va5179><va9282><va4592><va15107><va8986><va7438><va4083><va10890><va16026><va13382><va6492><va13588><va13588><va13588><va13588><va2160><va13444><va9304><va8459><va3010><va4496><va3738><va1602><va4024><va14241><va3738><va10467><va9782><va2160><va5116><va9282><va12986><va13094><va4444><va12898><va12898><va11920><va5038><va8733><va10253><va7197><va3738><va2161><va3298><va2792><va8436><va10463><va177><va795><va16083><va10300><va10734><va12720><va12720><va4555><va10489><va6305><va10972><va1642><va15168><va5214><va15018><va15633><va15633><va13838><va10754><va15107><va4067><va15518><va15518><va14252><va15537><va15298><va1602><va7800><va5402><va2479><va2869><va7457><va7024><va3342><va4434><va10300><va8436><va9185><va15518><va15090><va14070><va7554><va15664><va14065><va3342><va8128><va2461><va10973><va3342><va3342><va4434><va10300><va10300><va15518><eov_o><boa_o><va13404><eov_o><boa_o><va13625><va12050><va2717><va2420><va16162><va8345><va2420><va4986><va5445><va1845><va2420><va8345><va8345><va2420><va2325><va16162><va7875><va2420><va8345><va8345><va2420><va8420><va7875><va8345><va2420><va6938><va6938><va2420><va16162><va7875><va6938><va2420><va6938><va6938><va2420><va16162><va7875><va6938><va2420><eoa_o></s>
+vla time: 354.07 sec
+cuda:0
+cuda:0
+cuda:0
+cuda:0
+cuda:0
+cuda:0
+cuda:0
+cuda:0
+cuda:0
+cuda:0
+cuda:0

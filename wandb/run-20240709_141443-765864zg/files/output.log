@@ -1,0 +1,46 @@
+Fetching 8 files: 100%|███████████████████████████████████████████████████████████████████████| 8/8 [00:00<00:00, 28363.85it/s]
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+W0709 14:14:54.987004 137384560895808 block_transformer.py:295] Using old attention computation from released December models.
+I0709 14:15:01.541914 137384560895808 checkpointer.py:164] Restoring item from /home/yunqiliu/.cache/huggingface/hub/models--rail-berkeley--octo-small/snapshots/03d88976c54a58e10480d2043a8c762b35bc2611/270000/default.
+I0709 14:15:02.210266 137384560895808 checkpointer.py:166] Finished restoring checkpoint from /home/yunqiliu/.cache/huggingface/hub/models--rail-berkeley--octo-small/snapshots/03d88976c54a58e10480d2043a8c762b35bc2611/270000/default.
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+finish loading the model
+Key 'action' not found in dataset_statistics
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/spaces/box.py:127: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/utils/passive_env_checker.py:165: UserWarning: [33mWARN: The obs returned by the `reset()` method is not within the observation space.
+  logger.warn(f"{pre} is not within the observation space.")
+len(images):0, episode_return:0.0
+keys dict_keys(['image_primary', 'proprio'])
+example_batch['observation'].keys():dict_keys(['image_primary', 'image_wrist', 'pad_mask', 'pad_mask_dict', 'proprio', 'timestep'])
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/utils/passive_env_checker.py:141: UserWarning: [33mWARN: The obs returned by the `reset()` method was expecting numpy array dtype to be float32, actual type: float64
+  logger.warn(
+Fetching 8 files: 100%|███████████████████████████████████████████████████████████████████████| 8/8 [00:00<00:00, 76087.15it/s]
+W0709 14:15:06.011720 137384560895808 octo_model.py:545] 'observations' is missing items compared to example_batch: {'pad_mask_dict/image_primary', 'pad_mask_dict/image_wrist', 'image_wrist', 'pad_mask_dict/timestep', 'timestep_pad_mask', 'pad_mask_dict/proprio', 'timestep', 'pad_mask'}
+W0709 14:15:07.084192 137384560895808 tokenizers.py:25] No pad_mask_dict found. Nothing will be masked.
+I0709 14:15:07.090232 137384560895808 tokenizers.py:110] No image inputs matching ('image_wrist',) were found.Skipping tokenizer entirely.
+W0709 14:15:07.090435 137384560895808 octo_module.py:194] Skipping observation tokenizer: obs_wrist
+W0709 14:15:07.092859 137384560895808 block_transformer.py:295] Using old attention computation from released December models.
+len(images):0, done:False?
+Episode return: 0.0
+the shape: (0,)
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/utils/passive_env_checker.py:233: DeprecationWarning: `np.bool8` is a deprecated alias for `np.bool_`.  (Deprecated NumPy 1.24)
+  if not isinstance(terminated, (bool, np.bool8)):
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/utils/passive_env_checker.py:165: UserWarning: [33mWARN: The obs returned by the `step()` method is not within the observation space.
+  logger.warn(f"{pre} is not within the observation space.")
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/utils/passive_env_checker.py:141: UserWarning: [33mWARN: The obs returned by the `step()` method was expecting numpy array dtype to be float32, actual type: float64
+  logger.warn(
+Traceback (most recent call last):
+  File "/home/yunqiliu/octo/examples/03_eval_finetuned.py", line 149, in <module>
+    app.run(main)
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/absl/app.py", line 308, in run
+    _run_main(main, args)
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/absl/app.py", line 254, in _run_main
+    sys.exit(main(argv))
+             ^^^^^^^^^^
+  File "/home/yunqiliu/octo/examples/03_eval_finetuned.py", line 140, in main
+    print(np.array(images).transpose(0, 3, 1, 2)[::2].shape)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: axes don't match array

@@ -1,0 +1,1 @@
+{"rollout_video": {"_type": "video-file", "sha256": "a208dceb4286df04152672115f1232d809f83d1e876162052f902b6c55258328", "size": 1292125, "path": "media/videos/rollout_video_0_a208dceb4286df041526.gif", "width": 256, "height": 256}, "_timestamp": 1720497512.633112, "_runtime": 297.9906220436096, "_step": 0, "_wandb": {"runtime": 297}}

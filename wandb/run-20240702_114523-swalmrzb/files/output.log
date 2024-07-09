@@ -1,0 +1,19 @@
+I0702 11:45:31.479213 139505522702144 03_eval_finetuned_copy.py:63] Loading finetuned model...
+
+Loading checkpoint shards: 100%|█████████████████████████████████████████████████████████████████| 3/3 [00:02<00:00,  1.35it/s]
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Traceback (most recent call last):
+  File "/home/yunqiliu/octo/examples/03_eval_finetuned_copy.py", line 226, in <module>
+    app.run(main)
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/absl/app.py", line 308, in run
+    _run_main(main, args)
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/absl/app.py", line 254, in _run_main
+    sys.exit(main(argv))
+             ^^^^^^^^^^
+  File "/home/yunqiliu/octo/examples/03_eval_finetuned_copy.py", line 90, in main
+    f = open(data_args.src_filepath, 'r')
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'https://github.com/Red-Fairy/robot-pipeline/blob/main/test_data/sample-bridge.json'
+finish loading the model
+try loading some data

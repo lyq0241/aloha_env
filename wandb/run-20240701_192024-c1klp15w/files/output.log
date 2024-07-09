@@ -1,0 +1,28 @@
+I0701 19:20:31.910669 132228561012544 03_eval_finetuned_copy.py:52] Loading finetuned model...
+Traceback (most recent call last):
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/transformers/utils/hub.py", line 399, in cached_file
+    resolved_file = hf_hub_download(
+                    ^^^^^^^^^^^^^^^^
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 106, in _inner_fn
+    validate_repo_id(arg_value)
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 154, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '~/octo/checkpoint-40000'. Use `repo_type` argument if needed.
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/home/yunqiliu/octo/examples/03_eval_finetuned_copy.py", line 137, in <module>
+    app.run(main)
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/absl/app.py", line 308, in run
+    _run_main(main, args)
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/absl/app.py", line 254, in _run_main
+    sys.exit(main(argv))
+             ^^^^^^^^^^
+  File "/home/yunqiliu/octo/examples/03_eval_finetuned_copy.py", line 59, in main
+    model_vla = AutoModelForCausalLM.from_pretrained(vla_args.model_name_or_path, **model_kwargs).to(device)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/transformers/models/auto/auto_factory.py", line 484, in from_pretrained
+    resolved_config_file = cached_file(
+                           ^^^^^^^^^^^^
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/transformers/utils/hub.py", line 463, in cached_file
+    raise EnvironmentError(
+OSError: Incorrect path_or_model_id: '~/octo/checkpoint-40000'. Please provide either the path to a local folder or the repo_id of a model on the Hub.

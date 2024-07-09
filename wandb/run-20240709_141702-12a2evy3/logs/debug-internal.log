@@ -1,0 +1,1232 @@
+2024-07-09 14:17:02,013 INFO    StreamThr :391992 [internal.py:wandb_internal():85] W&B internal server running at pid: 391992, started at: 2024-07-09 14:17:02.012532
+2024-07-09 14:17:02,015 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status
+2024-07-09 14:17:02,017 INFO    WriterThread:391992 [datastore.py:open_for_write():87] open: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/run-12a2evy3.wandb
+2024-07-09 14:17:02,017 DEBUG   SenderThread:391992 [sender.py:send():379] send: header
+2024-07-09 14:17:02,022 DEBUG   SenderThread:391992 [sender.py:send():379] send: run
+2024-07-09 14:17:02,710 INFO    SenderThread:391992 [dir_watcher.py:__init__():211] watching files in: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files
+2024-07-09 14:17:02,710 INFO    SenderThread:391992 [sender.py:_start_run_threads():1188] run started: 12a2evy3 with start time 1720505822.012512
+2024-07-09 14:17:02,727 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: check_version
+2024-07-09 14:17:02,728 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: check_version
+2024-07-09 14:17:02,965 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: run_start
+2024-07-09 14:17:02,979 DEBUG   HandlerThread:391992 [system_info.py:__init__():26] System info init
+2024-07-09 14:17:02,980 DEBUG   HandlerThread:391992 [system_info.py:__init__():41] System info init done
+2024-07-09 14:17:02,980 INFO    HandlerThread:391992 [system_monitor.py:start():194] Starting system monitor
+2024-07-09 14:17:02,980 INFO    SystemMonitor:391992 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-07-09 14:17:02,981 INFO    HandlerThread:391992 [system_monitor.py:probe():214] Collecting system info
+2024-07-09 14:17:02,981 INFO    SystemMonitor:391992 [interfaces.py:start():188] Started cpu monitoring
+2024-07-09 14:17:02,983 INFO    SystemMonitor:391992 [interfaces.py:start():188] Started disk monitoring
+2024-07-09 14:17:02,984 INFO    SystemMonitor:391992 [interfaces.py:start():188] Started gpu monitoring
+2024-07-09 14:17:02,986 INFO    SystemMonitor:391992 [interfaces.py:start():188] Started memory monitoring
+2024-07-09 14:17:02,986 INFO    SystemMonitor:391992 [interfaces.py:start():188] Started network monitoring
+2024-07-09 14:17:03,012 DEBUG   HandlerThread:391992 [system_info.py:probe():152] Probing system
+2024-07-09 14:17:03,015 DEBUG   HandlerThread:391992 [system_info.py:_probe_git():137] Probing git
+2024-07-09 14:17:03,024 DEBUG   HandlerThread:391992 [system_info.py:_probe_git():145] Probing git done
+2024-07-09 14:17:03,024 DEBUG   HandlerThread:391992 [system_info.py:probe():200] Probing system done
+2024-07-09 14:17:03,024 DEBUG   HandlerThread:391992 [system_monitor.py:probe():223] {'os': 'Linux-6.5.0-41-generic-x86_64-with-glibc2.35', 'python': '3.11.9', 'heartbeatAt': '2024-07-09T06:17:03.012298', 'startedAt': '2024-07-09T06:17:02.007114', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/yunqiliu/octo/examples/03_eval_finetuned.py', 'codePathLocal': '03_eval_finetuned.py', 'codePath': 'examples/03_eval_finetuned.py', 'git': {'remote': 'https://github.com/octo-models/octo.git', 'commit': '5eaa5c6960398925ae6f52ed072d843d2f3ecb0b'}, 'email': None, 'root': '/home/yunqiliu/octo', 'host': 'msrait-03', 'username': 'yunqiliu', 'executable': '/home/yunqiliu/anaconda3/envs/torch/bin/python', 'cpu_count': 32, 'cpu_count_logical': 64, 'cpu_freq': {'current': 960.409359375, 'min': 800.0, 'max': 3400.0}, 'cpu_freq_per_core': [{'current': 800.127, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 1599.996, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 2200.864, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 2200.967, 'min': 800.0, 'max': 3400.0}, {'current': 1600.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 2200.856, 'min': 800.0, 'max': 3400.0}, {'current': 2201.664, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 2200.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 1300.0, 'min': 800.0, 'max': 3400.0}, {'current': 2201.746, 'min': 800.0, 'max': 3400.0}, {'current': 800.423, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}], 'disk': {'/': {'total': 1632.7536506652832, 'used': 260.4933547973633}}, 'gpu': 'NVIDIA RTX A6000', 'gpu_count': 4, 'gpu_devices': [{'name': 'NVIDIA RTX A6000', 'memory_total': 51527024640}, {'name': 'NVIDIA RTX A6000', 'memory_total': 51527024640}, {'name': 'NVIDIA RTX A6000', 'memory_total': 51527024640}, {'name': 'NVIDIA RTX A6000', 'memory_total': 51527024640}], 'memory': {'total': 377.24077224731445}}
+2024-07-09 14:17:03,024 INFO    HandlerThread:391992 [system_monitor.py:probe():224] Finished collecting system info
+2024-07-09 14:17:03,024 INFO    HandlerThread:391992 [system_monitor.py:probe():227] Publishing system info
+2024-07-09 14:17:03,024 DEBUG   HandlerThread:391992 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2024-07-09 14:17:03,713 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/conda-environment.yaml
+2024-07-09 14:17:09,704 DEBUG   HandlerThread:391992 [system_info.py:_save_conda():224] Saving conda packages done
+2024-07-09 14:17:09,707 INFO    HandlerThread:391992 [system_monitor.py:probe():229] Finished publishing system info
+2024-07-09 14:17:09,713 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/conda-environment.yaml
+2024-07-09 14:17:09,714 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/wandb-metadata.json
+2024-07-09 14:17:09,717 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:17:09,718 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-09 14:17:09,719 DEBUG   SenderThread:391992 [sender.py:send():379] send: files
+2024-07-09 14:17:09,719 INFO    SenderThread:391992 [sender.py:_save_file():1454] saving file wandb-metadata.json with policy now
+2024-07-09 14:17:09,864 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: python_packages
+2024-07-09 14:17:09,865 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: python_packages
+2024-07-09 14:17:09,865 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-09 14:17:09,867 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: stop_status
+2024-07-09 14:17:09,871 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:17:10,303 DEBUG   SenderThread:391992 [sender.py:send():379] send: telemetry
+2024-07-09 14:17:10,612 DEBUG   SenderThread:391992 [sender.py:send():379] send: telemetry
+2024-07-09 14:17:10,714 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:17:10,715 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/requirements.txt
+2024-07-09 14:17:10,866 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:17:11,774 INFO    wandb-upload_0:391992 [upload_job.py:push():130] Uploaded file /tmp/tmphj6ttdpiwandb/hxx0fgds-wandb-metadata.json
+2024-07-09 14:17:12,413 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:17:12,715 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:17:13,375 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:17:13,382 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:17:14,379 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:17:14,716 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:17:15,413 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:17:16,441 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:17:17,403 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:17:18,763 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:17:18,940 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:17:19,827 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:17:20,719 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:17:20,768 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:17:21,768 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:17:22,719 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:17:23,051 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:17:24,041 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:17:24,053 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:17:24,720 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:17:25,159 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:17:25,160 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-09 14:17:25,161 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: stop_status
+2024-07-09 14:17:26,205 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:17:26,721 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:17:27,120 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:17:28,124 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:17:29,441 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:17:29,843 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:17:30,378 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:17:31,378 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:17:32,379 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:17:33,378 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:17:34,379 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:17:35,130 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:17:35,379 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:17:35,726 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/config.yaml
+2024-07-09 14:17:36,379 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:17:37,380 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:17:38,380 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:17:39,380 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:17:40,112 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-09 14:17:40,112 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: stop_status
+2024-07-09 14:17:40,380 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:17:40,438 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:17:40,729 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:17:41,380 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:17:42,382 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:17:43,382 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:17:44,395 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:17:45,383 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:17:46,126 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:17:46,383 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:17:46,733 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:17:47,383 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:17:48,383 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:17:49,384 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:17:50,384 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:17:51,384 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:17:51,448 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:17:52,384 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:17:52,736 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:17:53,385 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:17:54,384 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:17:55,112 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-09 14:17:55,113 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: stop_status
+2024-07-09 14:17:55,384 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:17:56,385 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:17:57,385 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:17:57,398 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:17:58,385 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:17:59,385 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:00,387 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:00,741 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:18:01,387 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:02,387 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:02,987 DEBUG   SystemMonitor:391992 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-07-09 14:18:02,991 DEBUG   SenderThread:391992 [sender.py:send():379] send: stats
+2024-07-09 14:18:02,993 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:18:03,387 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:04,389 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:05,388 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:06,388 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:06,745 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:18:07,388 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:08,127 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:18:08,388 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:09,388 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:10,112 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-09 14:18:10,113 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: stop_status
+2024-07-09 14:18:10,388 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:11,389 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:12,389 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:12,749 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:18:13,389 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:14,005 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:18:14,389 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:15,389 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:16,390 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:17,390 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:18,390 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:18,753 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:18:19,356 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:18:19,390 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:20,390 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:21,391 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:22,391 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:23,391 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:24,391 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:24,964 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:18:25,112 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-09 14:18:25,113 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: stop_status
+2024-07-09 14:18:25,391 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:26,391 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:26,757 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:18:27,392 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:28,392 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:29,392 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:30,127 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:18:30,392 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:31,392 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:32,392 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:32,761 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:18:32,994 DEBUG   SenderThread:391992 [sender.py:send():379] send: stats
+2024-07-09 14:18:33,392 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:34,393 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:35,129 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:18:35,393 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:36,393 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:37,393 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:38,393 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:38,765 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:18:39,395 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:40,112 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-09 14:18:40,113 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: stop_status
+2024-07-09 14:18:40,395 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:18:40,395 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:41,395 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:42,395 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:43,395 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:44,395 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:44,769 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:18:45,396 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:46,128 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:18:46,396 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:47,396 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:48,396 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:49,396 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:50,396 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:51,128 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:18:51,397 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:52,397 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:52,773 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:18:53,397 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:54,397 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:55,114 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-09 14:18:55,115 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: stop_status
+2024-07-09 14:18:55,397 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:56,398 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:56,455 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:18:57,398 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:58,398 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:18:58,777 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:18:59,398 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:00,398 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:01,398 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:02,130 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:19:02,399 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:02,996 DEBUG   SenderThread:391992 [sender.py:send():379] send: stats
+2024-07-09 14:19:03,399 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:04,399 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:04,780 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:19:05,399 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:06,399 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:07,399 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:08,130 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:19:08,400 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:09,400 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:10,114 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-09 14:19:10,115 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: stop_status
+2024-07-09 14:19:10,400 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:10,784 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:19:11,400 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:12,401 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:13,353 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:19:13,400 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:14,401 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:15,401 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:16,401 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:17,401 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:18,401 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:18,788 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:19:18,821 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:19:19,402 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:20,402 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:21,402 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:22,402 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:23,404 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:24,180 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:19:24,403 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:24,792 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:19:25,114 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-09 14:19:25,115 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: stop_status
+2024-07-09 14:19:25,403 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:26,403 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:27,403 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:28,403 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:29,403 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:29,804 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:19:30,404 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:30,796 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:19:31,404 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:32,404 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:32,999 DEBUG   SenderThread:391992 [sender.py:send():379] send: stats
+2024-07-09 14:19:33,404 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:34,404 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:35,001 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:19:35,405 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:36,405 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:36,799 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:19:37,405 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:38,405 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:39,405 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:40,115 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-09 14:19:40,115 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: stop_status
+2024-07-09 14:19:40,405 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:40,440 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:19:41,406 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:42,406 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:42,803 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:19:43,407 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:44,407 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:45,407 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:46,131 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:19:46,407 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:47,407 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:48,407 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:49,408 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:50,408 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:50,807 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:19:51,408 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:52,131 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:19:52,408 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:53,408 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:54,411 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:55,115 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-09 14:19:55,116 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: stop_status
+2024-07-09 14:19:55,411 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:56,412 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:56,811 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:19:57,412 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:57,455 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:19:58,412 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:19:59,412 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:00,417 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:01,413 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:02,413 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:02,815 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:20:03,003 DEBUG   SenderThread:391992 [sender.py:send():379] send: stats
+2024-07-09 14:20:03,006 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:20:03,413 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:04,413 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:05,413 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:06,413 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:07,413 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:08,414 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:08,524 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:20:08,818 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:20:09,414 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:10,115 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-09 14:20:10,116 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: stop_status
+2024-07-09 14:20:10,414 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:11,414 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:12,414 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:13,415 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:13,877 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:20:14,415 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:14,822 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:20:15,415 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:16,415 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:17,415 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:18,415 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:19,132 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:20:19,416 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:20,416 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:21,416 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:22,416 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:22,827 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:20:23,416 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:24,293 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:20:24,416 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:25,115 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-09 14:20:25,116 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: stop_status
+2024-07-09 14:20:25,417 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:26,417 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:27,417 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:28,417 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:28,831 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:20:29,417 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:29,689 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:20:30,417 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:31,417 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:32,418 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:33,007 DEBUG   SenderThread:391992 [sender.py:send():379] send: stats
+2024-07-09 14:20:33,418 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:34,419 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:34,834 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:20:35,132 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:20:35,419 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:36,419 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:37,419 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:38,419 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:39,419 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:40,116 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-09 14:20:40,116 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: stop_status
+2024-07-09 14:20:40,402 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:20:40,420 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:40,838 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:20:41,420 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:42,420 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:43,420 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:44,420 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:45,420 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:46,133 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:20:46,421 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:47,421 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:48,421 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:48,843 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:20:49,421 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:50,422 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:51,422 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:52,133 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:20:52,422 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:53,422 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:54,422 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:54,846 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:20:55,116 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-09 14:20:55,117 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: stop_status
+2024-07-09 14:20:55,422 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:56,423 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:57,423 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:57,436 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:20:58,423 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:20:59,423 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:00,423 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:00,850 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:21:01,424 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:02,424 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:03,010 DEBUG   SenderThread:391992 [sender.py:send():379] send: stats
+2024-07-09 14:21:03,012 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:21:03,424 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:04,424 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:05,425 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:06,425 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:06,854 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:21:07,425 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:08,425 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:08,737 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:21:09,430 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:10,116 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-09 14:21:10,117 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: stop_status
+2024-07-09 14:21:10,430 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:11,430 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:12,430 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:12,857 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:21:13,430 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:14,089 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:21:14,430 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:15,431 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:16,431 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:17,431 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:18,431 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:19,431 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:19,872 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:21:20,431 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:20,862 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:21:21,432 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:22,432 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:23,432 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:24,432 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:25,116 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-09 14:21:25,117 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: stop_status
+2024-07-09 14:21:25,432 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:25,448 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:21:26,432 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:26,866 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:21:27,432 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:28,433 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:29,433 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:30,433 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:31,134 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:21:31,433 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:32,433 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:32,869 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:21:33,013 DEBUG   SenderThread:391992 [sender.py:send():379] send: stats
+2024-07-09 14:21:33,435 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:34,434 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:35,434 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:36,135 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:21:36,434 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:37,434 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:38,435 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:39,435 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:40,116 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-09 14:21:40,118 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: stop_status
+2024-07-09 14:21:40,434 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:40,874 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:21:41,435 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:41,444 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:21:42,435 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:43,435 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:44,436 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:45,436 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:46,436 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:46,878 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:21:47,135 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:21:47,436 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:48,436 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:49,437 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:50,437 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:51,437 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:52,438 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:52,512 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:21:52,881 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:21:53,440 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:54,438 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:55,116 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-09 14:21:55,117 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: stop_status
+2024-07-09 14:21:55,438 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:56,438 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:57,438 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:58,249 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:21:58,439 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:21:59,439 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:00,439 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:00,886 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:22:01,439 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:02,439 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:03,016 DEBUG   SenderThread:391992 [sender.py:send():379] send: stats
+2024-07-09 14:22:03,440 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:04,019 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:22:04,440 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:05,440 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:06,440 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:06,889 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:22:07,440 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:08,440 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:09,140 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:22:09,441 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:10,117 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-09 14:22:10,118 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: stop_status
+2024-07-09 14:22:10,441 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:11,441 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:12,441 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:12,893 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:22:13,442 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:14,433 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:22:14,442 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:15,442 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:16,442 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:17,442 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:18,442 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:18,897 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:22:19,442 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:19,937 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:22:20,443 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:21,443 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:22,443 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:23,443 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:24,463 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:25,117 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-09 14:22:25,118 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: stop_status
+2024-07-09 14:22:25,383 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:22:25,443 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:26,444 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:26,902 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:22:27,444 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:28,444 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:29,444 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:30,444 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:31,021 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:22:31,445 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:32,445 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:32,905 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:22:33,022 DEBUG   SenderThread:391992 [sender.py:send():379] send: stats
+2024-07-09 14:22:33,445 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:34,445 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:35,445 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:36,140 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:22:36,446 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:37,446 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:38,446 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:38,908 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:22:39,446 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:40,117 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-09 14:22:40,118 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: stop_status
+2024-07-09 14:22:40,446 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:41,446 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:41,451 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:22:42,447 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:43,447 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:44,447 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:45,447 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:46,447 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:46,913 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:22:47,141 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:22:47,448 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:48,448 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:49,448 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:50,448 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:51,448 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:52,448 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:52,917 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:22:53,121 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:22:53,449 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:54,449 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:55,117 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-09 14:22:55,118 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: stop_status
+2024-07-09 14:22:55,449 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:56,449 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:57,449 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:58,450 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:22:58,621 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:22:58,920 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:22:59,451 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:00,451 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:01,452 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:02,452 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:03,025 DEBUG   SenderThread:391992 [sender.py:send():379] send: stats
+2024-07-09 14:23:03,452 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:04,027 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:23:04,453 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:04,924 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:23:05,452 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:06,453 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:07,453 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:08,453 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:09,142 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:23:09,453 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:10,117 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-09 14:23:10,118 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: stop_status
+2024-07-09 14:23:10,453 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:11,453 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:12,454 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:12,929 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:23:13,454 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:14,454 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:14,557 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:23:15,454 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:16,455 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:17,455 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:18,454 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:18,933 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:23:19,455 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:20,141 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:23:20,455 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:21,455 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:22,455 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:23,455 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:24,456 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:24,936 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:23:25,118 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-09 14:23:25,118 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: stop_status
+2024-07-09 14:23:25,372 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:23:25,456 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:26,456 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:27,456 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:28,456 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:29,457 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:30,457 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:30,552 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:23:31,457 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:32,457 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:32,941 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:23:33,031 DEBUG   SenderThread:391992 [sender.py:send():379] send: stats
+2024-07-09 14:23:33,457 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:34,460 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:35,460 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:36,142 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:23:36,460 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:37,460 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:38,460 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:38,944 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:23:39,461 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:40,118 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-09 14:23:40,119 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: stop_status
+2024-07-09 14:23:40,461 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:41,465 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:41,481 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:23:42,461 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:43,461 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:44,462 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:44,948 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:23:45,462 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:46,462 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:47,143 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:23:47,462 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:48,463 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:49,463 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:50,463 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:50,951 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:23:51,463 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:52,463 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:53,143 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:23:53,464 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:54,464 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:55,118 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-09 14:23:55,119 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: stop_status
+2024-07-09 14:23:55,464 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:56,464 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:57,464 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:58,465 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:23:58,556 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:23:58,956 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:23:59,465 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:00,465 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:01,465 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:02,465 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:03,033 DEBUG   SenderThread:391992 [sender.py:send():379] send: stats
+2024-07-09 14:24:03,465 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:04,040 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:24:04,465 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:04,960 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:24:05,466 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:06,466 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:07,466 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:08,466 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:09,144 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:24:09,479 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:10,118 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-09 14:24:10,119 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: stop_status
+2024-07-09 14:24:10,466 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:10,963 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:24:11,467 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:12,467 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:13,467 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:14,410 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:24:14,467 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:15,468 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:16,468 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:16,967 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:24:17,468 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:18,468 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:19,468 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:19,993 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:24:20,468 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:21,469 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:22,471 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:23,469 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:24,469 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:24,972 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:24:25,118 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-09 14:24:25,119 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: stop_status
+2024-07-09 14:24:25,469 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:25,479 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:24:26,469 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:27,470 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:28,470 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:29,470 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:30,470 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:30,975 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:24:31,146 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:24:31,470 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:32,470 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:33,036 DEBUG   SenderThread:391992 [sender.py:send():379] send: stats
+2024-07-09 14:24:33,471 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:34,471 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:35,471 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:36,471 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:36,572 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:24:36,979 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:24:37,471 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:38,472 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:39,472 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:40,119 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-09 14:24:40,119 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: stop_status
+2024-07-09 14:24:40,472 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:41,472 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:41,971 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:24:42,472 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:42,983 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:24:43,472 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:44,473 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:45,473 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:46,473 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:47,146 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:24:47,473 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:48,473 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:49,474 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:50,474 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:50,987 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:24:51,474 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:52,146 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:24:52,474 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:53,474 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:54,475 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:55,119 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-09 14:24:55,120 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: stop_status
+2024-07-09 14:24:55,475 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:56,475 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:56,991 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:24:57,406 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:24:57,475 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:58,475 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:24:59,476 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:00,476 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:01,476 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:02,476 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:02,994 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:25:03,039 DEBUG   SenderThread:391992 [sender.py:send():379] send: stats
+2024-07-09 14:25:03,041 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:25:03,477 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:04,476 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:05,477 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:06,477 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:07,477 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:08,477 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:08,552 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:25:08,998 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:25:09,478 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:10,119 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-09 14:25:10,120 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: stop_status
+2024-07-09 14:25:10,478 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:11,478 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:12,479 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:13,478 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:14,304 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:25:14,478 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:15,478 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:16,479 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:17,003 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:25:17,480 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:18,480 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:19,480 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:20,147 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:25:20,480 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:21,480 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:22,481 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:23,006 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:25:23,481 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:24,481 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:25,119 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-09 14:25:25,120 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: stop_status
+2024-07-09 14:25:25,458 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:25:25,481 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:26,481 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:27,481 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:28,482 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:29,010 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:25:29,482 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:30,482 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:31,148 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:25:31,482 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:32,483 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:33,043 DEBUG   SenderThread:391992 [sender.py:send():379] send: stats
+2024-07-09 14:25:33,483 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:34,483 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:35,013 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:25:35,483 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:36,148 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:25:36,483 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:37,483 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:38,484 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:39,483 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:40,119 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-09 14:25:40,120 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: stop_status
+2024-07-09 14:25:40,484 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:41,444 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:25:41,484 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:42,484 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:43,018 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:25:43,484 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:44,484 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:45,485 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:46,488 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:46,532 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:25:47,485 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:48,485 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:49,022 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:25:49,485 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:50,486 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:51,486 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:52,149 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:25:52,486 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:53,486 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:54,486 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:55,026 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:25:55,119 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-09 14:25:55,120 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: stop_status
+2024-07-09 14:25:55,486 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:56,487 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:57,371 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:25:57,487 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:58,487 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:25:59,487 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:00,488 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:01,029 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:26:01,487 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:02,488 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:03,046 DEBUG   SenderThread:391992 [sender.py:send():379] send: stats
+2024-07-09 14:26:03,047 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:26:03,488 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:04,488 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:05,488 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:06,488 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:07,033 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:26:07,488 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:08,176 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:26:08,489 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:09,489 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:10,120 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-09 14:26:10,120 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: stop_status
+2024-07-09 14:26:10,489 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:11,489 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:12,489 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:13,490 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:13,624 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:26:14,491 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:15,038 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:26:15,490 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:16,490 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:17,491 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:18,491 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:19,101 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:26:19,491 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:20,491 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:21,042 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:26:21,491 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:22,492 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:23,492 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:24,150 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:26:24,492 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:25,120 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-09 14:26:25,121 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: stop_status
+2024-07-09 14:26:25,492 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:26,492 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:27,045 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:26:27,496 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:28,495 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:29,495 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:29,685 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:26:30,495 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:31,495 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:32,496 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:33,050 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:26:33,050 DEBUG   SenderThread:391992 [sender.py:send():379] send: stats
+2024-07-09 14:26:33,497 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:34,496 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:35,052 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:26:35,497 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:36,497 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:37,497 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:38,497 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:39,497 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:40,120 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-09 14:26:40,121 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: stop_status
+2024-07-09 14:26:40,374 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:26:40,497 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:41,054 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:26:41,498 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:42,498 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:43,498 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:44,498 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:45,498 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:46,336 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:26:46,498 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:47,058 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:26:47,498 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:48,499 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:49,499 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:50,499 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:51,499 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:51,779 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:26:52,499 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:53,062 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:26:53,499 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:54,500 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:55,120 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-09 14:26:55,121 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: stop_status
+2024-07-09 14:26:55,500 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:56,500 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:57,460 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:26:57,500 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:58,500 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:26:59,500 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:00,501 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:01,067 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:27:01,501 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:02,501 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:03,054 DEBUG   SenderThread:391992 [sender.py:send():379] send: stats
+2024-07-09 14:27:03,058 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:27:03,501 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:04,501 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:05,501 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:06,502 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:07,070 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:27:07,502 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:08,152 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:27:08,502 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:09,502 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:10,120 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-09 14:27:10,121 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: stop_status
+2024-07-09 14:27:10,502 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:11,502 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:12,503 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:13,074 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:27:13,503 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:13,765 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:27:14,503 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:15,504 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:16,503 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:17,504 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:18,504 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:19,385 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:27:19,503 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:20,504 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:21,079 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:27:21,504 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:22,504 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:23,507 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:24,506 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:24,863 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:27:25,121 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-09 14:27:25,122 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: stop_status
+2024-07-09 14:27:25,506 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:26,506 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:27,082 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:27:27,506 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:28,506 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:29,507 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:30,152 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:27:30,507 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:31,507 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:32,507 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:33,056 DEBUG   SenderThread:391992 [sender.py:send():379] send: stats
+2024-07-09 14:27:33,086 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:27:33,507 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:34,509 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:35,156 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:27:35,508 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:36,508 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:37,508 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:38,508 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:39,089 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:27:39,508 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:40,121 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-09 14:27:40,122 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: stop_status
+2024-07-09 14:27:40,397 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:27:40,509 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:41,509 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:42,509 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:43,509 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:44,509 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:45,093 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:27:45,510 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:46,157 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:27:46,510 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:47,510 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:48,510 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:49,510 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:50,510 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:51,510 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:51,660 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:27:52,511 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:53,098 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:27:53,511 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:54,511 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:55,121 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-09 14:27:55,122 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: stop_status
+2024-07-09 14:27:55,511 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:56,511 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:57,245 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:27:57,512 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:58,512 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:27:59,101 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:27:59,512 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:28:00,512 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:28:01,512 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:28:02,512 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:28:03,060 DEBUG   SenderThread:391992 [sender.py:send():379] send: stats
+2024-07-09 14:28:03,065 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:28:03,512 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:28:04,513 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:28:05,105 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:28:05,513 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:28:06,513 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:28:07,513 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:28:08,158 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:28:08,513 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:28:09,513 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:28:10,127 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-09 14:28:10,128 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: stop_status
+2024-07-09 14:28:10,514 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:28:11,111 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:28:11,514 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:28:12,514 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:28:13,371 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:28:13,514 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:28:14,514 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:28:15,515 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:28:16,517 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:28:17,516 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:28:18,516 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:28:18,597 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:28:19,122 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:28:19,516 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:28:20,516 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:28:21,516 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:28:22,516 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:28:23,517 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:28:24,021 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:28:24,517 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:28:25,122 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-09 14:28:25,123 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: stop_status
+2024-07-09 14:28:25,129 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:28:25,517 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:28:26,517 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:28:27,517 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:28:28,518 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:28:29,386 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:28:29,518 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:28:30,518 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:28:31,132 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:28:31,518 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:28:32,518 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:28:33,064 DEBUG   SenderThread:391992 [sender.py:send():379] send: stats
+2024-07-09 14:28:33,518 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:28:34,518 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:28:34,603 DEBUG   SenderThread:391992 [sender.py:send():379] send: files
+2024-07-09 14:28:34,604 INFO    SenderThread:391992 [sender.py:_save_file():1454] saving file media/videos/rollout_video_0_7b8fc1acda595352ab35.gif with policy now
+2024-07-09 14:28:34,605 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:28:34,644 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-09 14:28:34,647 DEBUG   SenderThread:391992 [sender.py:send():379] send: history
+2024-07-09 14:28:34,648 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: summary_record
+2024-07-09 14:28:34,648 INFO    SenderThread:391992 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-09 14:28:34,649 DEBUG   SenderThread:391992 [sender.py:send():379] send: exit
+2024-07-09 14:28:34,649 INFO    SenderThread:391992 [sender.py:send_exit():586] handling exit code: 0
+2024-07-09 14:28:34,650 INFO    SenderThread:391992 [sender.py:send_exit():588] handling runtime: 691
+2024-07-09 14:28:34,650 INFO    SenderThread:391992 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-09 14:28:34,651 INFO    SenderThread:391992 [sender.py:send_exit():594] send defer
+2024-07-09 14:28:34,651 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: defer
+2024-07-09 14:28:34,651 INFO    HandlerThread:391992 [handler.py:handle_request_defer():184] handle defer: 0
+2024-07-09 14:28:34,652 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: defer
+2024-07-09 14:28:34,652 INFO    SenderThread:391992 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-07-09 14:28:34,652 INFO    SenderThread:391992 [sender.py:transition_state():614] send defer: 1
+2024-07-09 14:28:34,653 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: defer
+2024-07-09 14:28:34,653 INFO    HandlerThread:391992 [handler.py:handle_request_defer():184] handle defer: 1
+2024-07-09 14:28:34,653 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: defer
+2024-07-09 14:28:34,653 INFO    SenderThread:391992 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-07-09 14:28:34,653 INFO    SenderThread:391992 [sender.py:transition_state():614] send defer: 2
+2024-07-09 14:28:34,654 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: defer
+2024-07-09 14:28:34,654 INFO    HandlerThread:391992 [handler.py:handle_request_defer():184] handle defer: 2
+2024-07-09 14:28:34,654 INFO    HandlerThread:391992 [system_monitor.py:finish():203] Stopping system monitor
+2024-07-09 14:28:34,655 DEBUG   SystemMonitor:391992 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-07-09 14:28:34,655 DEBUG   SystemMonitor:391992 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-07-09 14:28:34,658 INFO    HandlerThread:391992 [interfaces.py:finish():200] Joined cpu monitor
+2024-07-09 14:28:34,658 INFO    HandlerThread:391992 [interfaces.py:finish():200] Joined disk monitor
+2024-07-09 14:28:35,107 INFO    HandlerThread:391992 [interfaces.py:finish():200] Joined gpu monitor
+2024-07-09 14:28:35,107 INFO    HandlerThread:391992 [interfaces.py:finish():200] Joined memory monitor
+2024-07-09 14:28:35,107 INFO    HandlerThread:391992 [interfaces.py:finish():200] Joined network monitor
+2024-07-09 14:28:35,108 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: defer
+2024-07-09 14:28:35,108 INFO    SenderThread:391992 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-07-09 14:28:35,108 INFO    SenderThread:391992 [sender.py:transition_state():614] send defer: 3
+2024-07-09 14:28:35,109 DEBUG   SenderThread:391992 [sender.py:send():379] send: stats
+2024-07-09 14:28:35,110 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: defer
+2024-07-09 14:28:35,110 INFO    HandlerThread:391992 [handler.py:handle_request_defer():184] handle defer: 3
+2024-07-09 14:28:35,111 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: defer
+2024-07-09 14:28:35,111 INFO    SenderThread:391992 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-07-09 14:28:35,111 INFO    SenderThread:391992 [sender.py:transition_state():614] send defer: 4
+2024-07-09 14:28:35,111 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: defer
+2024-07-09 14:28:35,112 INFO    HandlerThread:391992 [handler.py:handle_request_defer():184] handle defer: 4
+2024-07-09 14:28:35,112 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: defer
+2024-07-09 14:28:35,112 INFO    SenderThread:391992 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-07-09 14:28:35,113 INFO    SenderThread:391992 [sender.py:transition_state():614] send defer: 5
+2024-07-09 14:28:35,113 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: defer
+2024-07-09 14:28:35,113 INFO    HandlerThread:391992 [handler.py:handle_request_defer():184] handle defer: 5
+2024-07-09 14:28:35,114 DEBUG   SenderThread:391992 [sender.py:send():379] send: summary
+2024-07-09 14:28:35,115 INFO    SenderThread:391992 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-09 14:28:35,115 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: defer
+2024-07-09 14:28:35,115 INFO    SenderThread:391992 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-07-09 14:28:35,116 INFO    SenderThread:391992 [sender.py:transition_state():614] send defer: 6
+2024-07-09 14:28:35,116 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: defer
+2024-07-09 14:28:35,116 INFO    HandlerThread:391992 [handler.py:handle_request_defer():184] handle defer: 6
+2024-07-09 14:28:35,117 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: defer
+2024-07-09 14:28:35,117 INFO    SenderThread:391992 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-07-09 14:28:35,117 INFO    SenderThread:391992 [sender.py:transition_state():614] send defer: 7
+2024-07-09 14:28:35,117 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: status_report
+2024-07-09 14:28:35,117 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: defer
+2024-07-09 14:28:35,117 INFO    HandlerThread:391992 [handler.py:handle_request_defer():184] handle defer: 7
+2024-07-09 14:28:35,118 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: defer
+2024-07-09 14:28:35,118 INFO    SenderThread:391992 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-07-09 14:28:35,135 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/media/videos/rollout_video_0_7b8fc1acda595352ab35.gif
+2024-07-09 14:28:35,135 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/wandb-summary.json
+2024-07-09 14:28:35,135 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/media
+2024-07-09 14:28:35,136 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/media/videos
+2024-07-09 14:28:35,647 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-09 14:28:37,164 INFO    wandb-upload_0:391992 [upload_job.py:push():130] Uploaded file /tmp/tmphj6ttdpiwandb/negpgfh8-media/videos/rollout_video_0_7b8fc1acda595352ab35.gif
+2024-07-09 14:28:38,351 INFO    SenderThread:391992 [sender.py:transition_state():614] send defer: 8
+2024-07-09 14:28:38,351 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: poll_exit
+2024-07-09 14:28:38,352 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: defer
+2024-07-09 14:28:38,352 INFO    HandlerThread:391992 [handler.py:handle_request_defer():184] handle defer: 8
+2024-07-09 14:28:38,353 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: defer
+2024-07-09 14:28:38,353 INFO    SenderThread:391992 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-07-09 14:28:38,353 INFO    SenderThread:391992 [job_builder.py:build():440] Attempting to build job artifact
+2024-07-09 14:28:38,354 INFO    SenderThread:391992 [job_builder.py:_get_source_type():569] is repo sourced job
+2024-07-09 14:28:38,380 INFO    SenderThread:391992 [job_builder.py:build():545] adding wandb-job metadata file
+2024-07-09 14:28:38,385 INFO    SenderThread:391992 [sender.py:transition_state():614] send defer: 9
+2024-07-09 14:28:38,386 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: defer
+2024-07-09 14:28:38,386 INFO    HandlerThread:391992 [handler.py:handle_request_defer():184] handle defer: 9
+2024-07-09 14:28:38,387 DEBUG   SenderThread:391992 [sender.py:send():379] send: artifact
+2024-07-09 14:28:38,648 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-09 14:28:39,137 INFO    Thread-12 :391992 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:28:39,415 INFO    wandb-upload_0:391992 [upload_job.py:push():130] Uploaded file /tmp/tmphj6ttdpiwandb/jta3lzm5-media/videos/rollout_video_0_7b8fc1acda595352ab35.gif
+2024-07-09 14:28:39,633 INFO    SenderThread:391992 [sender.py:send_artifact():1530] sent artifact job-https___github.com_octo-models_octo.git_examples_03_eval_finetuned.py - {'id': 'QXJ0aWZhY3Q6OTUwMDYzODIw', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjIzNDg4OTA3MA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6OTUwMDYzODIw', 'versionIndex': 8}}}
+2024-07-09 14:28:39,634 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: defer
+2024-07-09 14:28:39,634 INFO    SenderThread:391992 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-07-09 14:28:39,634 INFO    SenderThread:391992 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-07-09 14:28:40,139 INFO    SenderThread:391992 [dir_watcher.py:finish():388] scan: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files
+2024-07-09 14:28:40,139 INFO    SenderThread:391992 [dir_watcher.py:finish():402] scan save: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/wandb-metadata.json wandb-metadata.json
+2024-07-09 14:28:40,139 INFO    SenderThread:391992 [dir_watcher.py:finish():402] scan save: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/wandb-summary.json wandb-summary.json
+2024-07-09 14:28:40,140 INFO    SenderThread:391992 [dir_watcher.py:finish():402] scan save: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/conda-environment.yaml conda-environment.yaml
+2024-07-09 14:28:40,140 INFO    SenderThread:391992 [dir_watcher.py:finish():402] scan save: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/requirements.txt requirements.txt
+2024-07-09 14:28:40,140 INFO    SenderThread:391992 [dir_watcher.py:finish():402] scan save: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/config.yaml config.yaml
+2024-07-09 14:28:40,140 INFO    SenderThread:391992 [dir_watcher.py:finish():402] scan save: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log output.log
+2024-07-09 14:28:40,160 INFO    SenderThread:391992 [dir_watcher.py:finish():402] scan save: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/media/videos/rollout_video_0_7b8fc1acda595352ab35.gif media/videos/rollout_video_0_7b8fc1acda595352ab35.gif
+2024-07-09 14:28:40,160 INFO    SenderThread:391992 [sender.py:transition_state():614] send defer: 10
+2024-07-09 14:28:40,160 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: poll_exit
+2024-07-09 14:28:40,161 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: defer
+2024-07-09 14:28:40,161 INFO    HandlerThread:391992 [handler.py:handle_request_defer():184] handle defer: 10
+2024-07-09 14:28:40,162 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: defer
+2024-07-09 14:28:40,162 INFO    SenderThread:391992 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-07-09 14:28:40,162 INFO    SenderThread:391992 [file_pusher.py:finish():169] shutting down file pusher
+2024-07-09 14:28:40,650 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-09 14:28:40,651 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: poll_exit
+2024-07-09 14:28:40,798 INFO    wandb-upload_1:391992 [upload_job.py:push():130] Uploaded file /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/wandb-summary.json
+2024-07-09 14:28:41,201 INFO    wandb-upload_0:391992 [upload_job.py:push():130] Uploaded file /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/conda-environment.yaml
+2024-07-09 14:28:41,204 INFO    wandb-upload_2:391992 [upload_job.py:push():130] Uploaded file /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/requirements.txt
+2024-07-09 14:28:41,258 INFO    wandb-upload_3:391992 [upload_job.py:push():130] Uploaded file /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/config.yaml
+2024-07-09 14:28:41,263 INFO    wandb-upload_4:391992 [upload_job.py:push():130] Uploaded file /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/files/output.log
+2024-07-09 14:28:41,464 INFO    Thread-11 (_thread_body):391992 [sender.py:transition_state():614] send defer: 11
+2024-07-09 14:28:41,464 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: defer
+2024-07-09 14:28:41,465 INFO    HandlerThread:391992 [handler.py:handle_request_defer():184] handle defer: 11
+2024-07-09 14:28:41,466 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: defer
+2024-07-09 14:28:41,466 INFO    SenderThread:391992 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-07-09 14:28:41,466 INFO    SenderThread:391992 [file_pusher.py:join():175] waiting for file pusher
+2024-07-09 14:28:41,467 INFO    SenderThread:391992 [sender.py:transition_state():614] send defer: 12
+2024-07-09 14:28:41,468 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: defer
+2024-07-09 14:28:41,468 INFO    HandlerThread:391992 [handler.py:handle_request_defer():184] handle defer: 12
+2024-07-09 14:28:41,468 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: defer
+2024-07-09 14:28:41,469 INFO    SenderThread:391992 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-07-09 14:28:41,469 INFO    SenderThread:391992 [file_stream.py:finish():601] file stream finish called
+2024-07-09 14:28:41,651 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-09 14:28:42,162 INFO    SenderThread:391992 [file_stream.py:finish():605] file stream finish is done
+2024-07-09 14:28:42,162 INFO    SenderThread:391992 [sender.py:transition_state():614] send defer: 13
+2024-07-09 14:28:42,162 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: poll_exit
+2024-07-09 14:28:42,162 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: defer
+2024-07-09 14:28:42,163 INFO    HandlerThread:391992 [handler.py:handle_request_defer():184] handle defer: 13
+2024-07-09 14:28:42,163 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: defer
+2024-07-09 14:28:42,164 INFO    SenderThread:391992 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-07-09 14:28:42,164 INFO    SenderThread:391992 [sender.py:transition_state():614] send defer: 14
+2024-07-09 14:28:42,164 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: defer
+2024-07-09 14:28:42,164 INFO    HandlerThread:391992 [handler.py:handle_request_defer():184] handle defer: 14
+2024-07-09 14:28:42,165 DEBUG   SenderThread:391992 [sender.py:send():379] send: final
+2024-07-09 14:28:42,165 DEBUG   SenderThread:391992 [sender.py:send():379] send: footer
+2024-07-09 14:28:42,166 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: defer
+2024-07-09 14:28:42,166 INFO    SenderThread:391992 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-07-09 14:28:42,167 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-09 14:28:42,167 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: poll_exit
+2024-07-09 14:28:42,168 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: server_info
+2024-07-09 14:28:42,169 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: server_info
+2024-07-09 14:28:42,174 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-09 14:28:42,175 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: get_summary
+2024-07-09 14:28:42,176 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: sampled_history
+2024-07-09 14:28:42,177 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-09 14:28:42,407 DEBUG   SenderThread:391992 [sender.py:send_request():406] send_request: poll_exit
+2024-07-09 14:28:42,408 INFO    MainThread:391992 [wandb_run.py:_footer_history_summary_info():3991] rendering history
+2024-07-09 14:28:42,408 INFO    MainThread:391992 [wandb_run.py:_footer_history_summary_info():4023] rendering summary
+2024-07-09 14:28:42,408 INFO    MainThread:391992 [wandb_run.py:_footer_sync_info():3950] logging synced files
+2024-07-09 14:28:42,409 DEBUG   HandlerThread:391992 [handler.py:handle_request():158] handle_request: shutdown
+2024-07-09 14:28:42,409 INFO    HandlerThread:391992 [handler.py:finish():882] shutting down handler
+2024-07-09 14:28:43,175 INFO    WriterThread:391992 [datastore.py:close():296] close: /home/yunqiliu/octo/examples/wandb/run-20240709_141702-12a2evy3/run-12a2evy3.wandb
+2024-07-09 14:28:43,407 INFO    SenderThread:391992 [sender.py:finish():1608] shutting down sender
+2024-07-09 14:28:43,408 INFO    SenderThread:391992 [file_pusher.py:finish():169] shutting down file pusher
+2024-07-09 14:28:43,408 INFO    SenderThread:391992 [file_pusher.py:join():175] waiting for file pusher

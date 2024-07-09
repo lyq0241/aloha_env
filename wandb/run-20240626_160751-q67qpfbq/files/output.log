@@ -1,0 +1,44 @@
+I0626 16:07:59.588553 140228251649856 03_eval_finetuned.py:48] Loading finetuned model...
+270000/default/commit_success.txt: 100%|███████████████████████████████████████████████████████| 109/109 [00:00<00:00, 252kB/s]
+config.json: 100%|████████████████████████████████████████████████████████████████████████| 3.63k/3.63k [00:00<00:00, 9.10MB/s]
+README.md: 100%|██████████████████████████████████████████████████████████████████████████| 3.32k/3.32k [00:00<00:00, 9.06MB/s]
+.gitattributes: 100%|█████████████████████████████████████████████████████████████████████| 1.58k/1.58k [00:00<00:00, 4.76MB/s]
+dataset_statistics.json: 100%|████████████████████████████████████████████████████████████| 30.9k/30.9k [00:00<00:00, 3.10MB/s]
+270000/commit_success.txt: 100%|███████████████████████████████████████████████████████████████| 101/101 [00:00<00:00, 213kB/s]
+example_batch.msgpack: 100%|████████████████████████████████████████████████████████████████| 738k/738k [00:00<00:00, 3.23MB/s]
+example_batch.msgpack:   0%|                                                                        | 0.00/738k [00:00<?, ?B/s]
+example_batch.msgpack: 100%|████████████████████████████████████████████████████████████████| 738k/738k [00:00<00:00, 3.28MB/s]
+
+
+
+
+
+
+
+
+Fetching 8 files: 100%|██████████████████████████████████████████████████████████████████████████| 8/8 [00:18<00:00,  2.34s/it]
+Traceback (most recent call last):
+  File "/home/yunqiliu/octo/examples/03_eval_finetuned.py", line 116, in <module>
+    app.run(main)
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/absl/app.py", line 308, in run
+    _run_main(main, args)
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/absl/app.py", line 254, in _run_main
+    sys.exit(main(argv))
+             ^^^^^^^^^^
+  File "/home/yunqiliu/octo/examples/03_eval_finetuned.py", line 51, in main
+    model = OctoModel.load_pretrained("hf://rail-berkeley/octo-small")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunqiliu/octo/examples/octo/model/octo_model.py", line 331, in load_pretrained
+    params_shape = jax.eval_shape(
+                   ^^^^^^^^^^^^^^^
+  File "/home/yunqiliu/octo/examples/octo/model/octo_module.py", line 362, in __call__
+    transformer_outputs = self.octo_transformer(
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunqiliu/octo/examples/octo/model/octo_module.py", line 163, in __call__
+    tokenizer_output: TokenGroup = tok(observations, tasks, train=train)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunqiliu/octo/examples/octo/model/components/tokenizers.py", line 187, in setup
+    from transformers import AutoConfig, FlaxAutoModel, FlaxT5EncoderModel
+ModuleNotFoundError: No module named 'transformers'
+--------------------
+For simplicity, JAX has removed its internal frames from the traceback of the following exception. Set JAX_TRACEBACK_FILTERING=off to include these.

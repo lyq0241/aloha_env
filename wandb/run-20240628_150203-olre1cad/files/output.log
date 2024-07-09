@@ -1,0 +1,61 @@
+I0628 15:02:11.123018 140010427664192 03_eval_finetuned.py:48] Loading finetuned model...
+Fetching 8 files: 100%|███████████████████████████████████████████████████████████████████████| 8/8 [00:00<00:00, 23513.97it/s]
+error: path is None
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+W0628 15:02:15.379612 140010427664192 block_transformer.py:295] Using old attention computation from released December models.
+I0628 15:02:22.005579 140010427664192 checkpointer.py:164] Restoring item from /home/yunqiliu/.cache/huggingface/hub/models--rail-berkeley--octo-small/snapshots/03d88976c54a58e10480d2043a8c762b35bc2611/270000/default.
+I0628 15:02:22.641409 140010427664192 checkpointer.py:166] Finished restoring checkpoint from /home/yunqiliu/.cache/huggingface/hub/models--rail-berkeley--octo-small/snapshots/03d88976c54a58e10480d2043a8c762b35bc2611/270000/default.
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+finish loading the model
+Key 'action' not found in dataset_statistics
+metadata.keys dict_keys(['action', 'num_trajectories', 'num_transitions', 'proprio'])
+obs keys dict_keys(['image_primary', 'proprio'])
+prio shape (14,)
+metadata shape dict_keys(['max', 'mean', 'min', 'std'])
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/spaces/box.py:127: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/utils/passive_env_checker.py:137: UserWarning: [33mWARN: The obs returned by the `reset()` method was expecting a numpy array, actual type: <class 'tensorflow.python.framework.ops.EagerTensor'>
+  logger.warn(
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/spaces/box.py:227: UserWarning: [33mWARN: Casting input x to numpy array.
+  logger.warn("Casting input x to numpy array.")
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/utils/passive_env_checker.py:137: UserWarning: [33mWARN: The obs returned by the `reset()` method was expecting a numpy array, actual type: <class 'jaxlib.xla_extension.ArrayImpl'>
+  logger.warn(
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/utils/passive_env_checker.py:165: UserWarning: [33mWARN: The obs returned by the `reset()` method is not within the observation space.
+  logger.warn(f"{pre} is not within the observation space.")
+Traceback (most recent call last):
+  File "/home/yunqiliu/octo/examples/03_eval_finetuned.py", line 121, in <module>
+    app.run(main)
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/absl/app.py", line 308, in run
+    _run_main(main, args)
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/absl/app.py", line 254, in _run_main
+    sys.exit(main(argv))
+             ^^^^^^^^^^
+  File "/home/yunqiliu/octo/examples/03_eval_finetuned.py", line 91, in main
+    obs, info = env.reset()
+                ^^^^^^^^^^^
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/core.py", line 323, in reset
+    return self.env.reset(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunqiliu/octo/examples/octo/utils/gym_wrappers.py", line 112, in reset
+    obs, info = self.env.reset(**kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/core.py", line 380, in reset
+    return self.observation(obs), info
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunqiliu/octo/examples/octo/utils/gym_wrappers.py", line 329, in observation
+    obs["proprio"] = self.normalize(
+                     ^^^^^^^^^^^^^^^
+  File "/home/yunqiliu/octo/examples/octo/utils/gym_wrappers.py", line 295, in normalize
+    (data - metadata["mean"]) / (metadata["std"] + 1e-8),
+     ~~~~~^~~~~~~~~~~~~~~~~~
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/jax/_src/numpy/array_methods.py", line 256, in deferring_binary_op
+    return binary_op(*args)
+           ^^^^^^^^^^^^^^^^
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/jax/_src/numpy/ufuncs.py", line 82, in <lambda>
+    fn = lambda x1, x2, /: lax_fn(*promote_args(numpy_fn.__name__, x1, x2))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: sub got incompatible shapes for broadcasting: (14,), (8,).
+--------------------
+For simplicity, JAX has removed its internal frames from the traceback of the following exception. Set JAX_TRACEBACK_FILTERING=off to include these.

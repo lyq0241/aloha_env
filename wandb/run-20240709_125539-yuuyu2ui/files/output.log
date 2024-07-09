@@ -1,0 +1,142 @@
+Fetching 8 files: 100%|███████████████████████████████████████████████████████████████████████| 8/8 [00:00<00:00, 28079.02it/s]
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+W0709 12:55:50.963720 138114541168448 block_transformer.py:295] Using old attention computation from released December models.
+I0709 12:55:57.419732 138114541168448 checkpointer.py:164] Restoring item from /home/yunqiliu/.cache/huggingface/hub/models--rail-berkeley--octo-small/snapshots/03d88976c54a58e10480d2043a8c762b35bc2611/270000/default.
+I0709 12:55:58.131126 138114541168448 checkpointer.py:166] Finished restoring checkpoint from /home/yunqiliu/.cache/huggingface/hub/models--rail-berkeley--octo-small/snapshots/03d88976c54a58e10480d2043a8c762b35bc2611/270000/default.
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+finish loading the model
+Key 'action' not found in dataset_statistics
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/spaces/box.py:127: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+len(images):0, episode_return:0.0
+keys dict_keys(['image_primary', 'proprio'])
+example_batch['observation'].keys():dict_keys(['image_primary', 'image_wrist', 'pad_mask', 'pad_mask_dict', 'proprio', 'timestep'])
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/utils/passive_env_checker.py:165: UserWarning: [33mWARN: The obs returned by the `reset()` method is not within the observation space.
+  logger.warn(f"{pre} is not within the observation space.")
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/utils/passive_env_checker.py:141: UserWarning: [33mWARN: The obs returned by the `reset()` method was expecting numpy array dtype to be float32, actual type: float64
+  logger.warn(
+Fetching 8 files: 100%|███████████████████████████████████████████████████████████████████████| 8/8 [00:00<00:00, 76783.60it/s]
+W0709 12:56:01.837971 138114541168448 octo_model.py:545] 'observations' is missing items compared to example_batch: {'pad_mask_dict/image_primary', 'pad_mask_dict/proprio', 'timestep_pad_mask', 'image_wrist', 'pad_mask_dict/image_wrist', 'timestep', 'pad_mask_dict/timestep', 'pad_mask'}
+W0709 12:56:02.891038 138114541168448 tokenizers.py:25] No pad_mask_dict found. Nothing will be masked.
+I0709 12:56:02.896817 138114541168448 tokenizers.py:110] No image inputs matching ('image_wrist',) were found.Skipping tokenizer entirely.
+W0709 12:56:02.897211 138114541168448 octo_module.py:194] Skipping observation tokenizer: obs_wrist
+W0709 12:56:02.899634 138114541168448 block_transformer.py:295] Using old attention computation from released December models.
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/utils/passive_env_checker.py:233: DeprecationWarning: `np.bool8` is a deprecated alias for `np.bool_`.  (Deprecated NumPy 1.24)
+  if not isinstance(terminated, (bool, np.bool8)):
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/utils/passive_env_checker.py:165: UserWarning: [33mWARN: The obs returned by the `step()` method is not within the observation space.
+  logger.warn(f"{pre} is not within the observation space.")
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/utils/passive_env_checker.py:141: UserWarning: [33mWARN: The obs returned by the `step()` method was expecting numpy array dtype to be float32, actual type: float64
+  logger.warn(
+len(images):10, episode_return:0.0
+len(images):20, episode_return:0.0
+len(images):30, episode_return:0.0
+len(images):40, episode_return:0.0
+len(images):50, episode_return:0.0
+len(images):60, episode_return:0.0
+len(images):70, episode_return:0.0
+len(images):80, episode_return:0.0
+len(images):90, episode_return:0.0
+len(images):100, episode_return:0.0
+len(images):110, episode_return:0.0
+len(images):120, episode_return:0.0
+len(images):130, episode_return:0.0
+len(images):140, episode_return:0.0
+len(images):150, episode_return:0.0
+len(images):160, episode_return:0.0
+len(images):170, episode_return:0.0
+len(images):180, episode_return:0.0
+len(images):190, episode_return:0.0
+len(images):200, episode_return:0.0
+len(images):210, episode_return:0.0
+len(images):220, episode_return:0.0
+len(images):230, episode_return:0.0
+len(images):240, episode_return:0.0
+len(images):250, episode_return:0.0
+len(images):260, episode_return:0.0
+len(images):270, episode_return:0.0
+len(images):280, episode_return:0.0
+len(images):290, episode_return:0.0
+len(images):300, episode_return:0.0
+len(images):310, episode_return:0.0
+len(images):320, episode_return:0.0
+len(images):330, episode_return:0.0
+len(images):340, episode_return:0.0
+len(images):350, episode_return:0.0
+len(images):360, episode_return:0.0
+len(images):370, episode_return:0.0
+len(images):380, episode_return:0.0
+len(images):390, episode_return:0.0
+len(images):400, episode_return:0.0
+len(images):410, episode_return:0.0
+len(images):420, episode_return:0.0
+len(images):430, episode_return:0.0
+len(images):440, episode_return:0.0
+len(images):450, episode_return:0.0
+len(images):460, episode_return:0.0
+len(images):470, episode_return:0.0
+len(images):480, episode_return:0.0
+len(images):490, episode_return:0.0
+len(images):500, episode_return:0.0
+len(images):510, episode_return:0.0
+len(images):520, episode_return:0.0
+len(images):530, episode_return:0.0
+len(images):540, episode_return:0.0
+len(images):550, episode_return:0.0
+len(images):560, episode_return:0.0
+len(images):570, episode_return:0.0
+len(images):580, episode_return:0.0
+len(images):590, episode_return:0.0
+len(images):600, episode_return:0.0
+len(images):610, episode_return:0.0
+len(images):620, episode_return:0.0
+len(images):630, episode_return:0.0
+len(images):640, episode_return:0.0
+len(images):650, episode_return:0.0
+len(images):660, episode_return:0.0
+len(images):670, episode_return:0.0
+len(images):680, episode_return:0.0
+len(images):690, episode_return:0.0
+len(images):700, episode_return:0.0
+len(images):710, episode_return:0.0
+len(images):720, episode_return:0.0
+len(images):730, episode_return:0.0
+len(images):740, episode_return:0.0
+len(images):750, episode_return:0.0
+len(images):760, episode_return:0.0
+len(images):770, episode_return:0.0
+len(images):780, episode_return:0.0
+len(images):790, episode_return:0.0
+len(images):800, episode_return:0.0
+len(images):810, episode_return:0.0
+len(images):820, episode_return:0.0
+len(images):830, episode_return:0.0
+len(images):840, episode_return:0.0
+len(images):850, episode_return:0.0
+len(images):860, episode_return:0.0
+len(images):870, episode_return:0.0
+len(images):880, episode_return:0.0
+len(images):890, episode_return:0.0
+len(images):900, episode_return:0.0
+len(images):910, episode_return:0.0
+len(images):920, episode_return:0.0
+len(images):930, episode_return:0.0
+len(images):940, episode_return:0.0
+len(images):950, episode_return:0.0
+len(images):960, episode_return:0.0
+len(images):970, episode_return:0.0
+len(images):980, episode_return:0.0
+len(images):990, episode_return:0.0
+Traceback (most recent call last):
+  File "/home/yunqiliu/octo/examples/03_eval_finetuned.py", line 146, in <module>
+    app.run(main)
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/absl/app.py", line 308, in run
+    _run_main(main, args)
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/absl/app.py", line 254, in _run_main
+    sys.exit(main(argv))
+             ^^^^^^^^^^
+  File "/home/yunqiliu/octo/examples/03_eval_finetuned.py", line 132, in main
+    episode_return += reward
+TypeError: unsupported operand type(s) for +=: 'float' and 'NoneType'
+len(images):1000, episode_return:0.0

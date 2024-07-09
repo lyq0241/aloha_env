@@ -1,0 +1,42 @@
+I0627 12:27:48.409213 137861935511360 03_eval_finetuned.py:48] Loading finetuned model...
+Fetching 8 files: 100%|███████████████████████████████████████████████████████████████████████| 8/8 [00:00<00:00, 33156.55it/s]
+error: path is None
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+W0627 12:27:52.638581 137861935511360 block_transformer.py:295] Using old attention computation from released December models.
+I0627 12:27:59.081981 137861935511360 checkpointer.py:164] Restoring item from /home/yunqiliu/.cache/huggingface/hub/models--rail-berkeley--octo-small/snapshots/03d88976c54a58e10480d2043a8c762b35bc2611/270000/default.
+I0627 12:27:59.745273 137861935511360 checkpointer.py:166] Finished restoring checkpoint from /home/yunqiliu/.cache/huggingface/hub/models--rail-berkeley--octo-small/snapshots/03d88976c54a58e10480d2043a8c762b35bc2611/270000/default.
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+finish loading the model
+Traceback (most recent call last):
+  File "/home/yunqiliu/octo/examples/03_eval_finetuned.py", line 116, in <module>
+    app.run(main)
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/absl/app.py", line 308, in run
+    _run_main(main, args)
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/absl/app.py", line 254, in _run_main
+    sys.exit(main(argv))
+             ^^^^^^^^^^
+  File "/home/yunqiliu/octo/examples/03_eval_finetuned.py", line 67, in main
+    env = gym.make("aloha-sim-cube-v0")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/envs/registration.py", line 640, in make
+    env = env_creator(**_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunqiliu/octo/examples/envs/aloha_sim_env.py", line 107, in <lambda>
+    make_sim_env("sim_transfer_cube"), camera_names=["top"]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunqiliu/octo/examples/sim_env.py", line 40, in make_sim_env
+    physics = mujoco.Physics.from_xml_path(xml_path)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/dm_control/mujoco/engine.py", line 454, in from_xml_path
+    model = wrapper.MjModel.from_xml_path(file_path)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/dm_control/mujoco/wrapper/core.py", line 305, in from_xml_path
+    model_ptr = _get_model_ptr_from_xml(xml_path=xml_path)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/dm_control/mujoco/wrapper/core.py", line 180, in _get_model_ptr_from_xml
+    ptr = mujoco.MjModel.from_xml_path(xml_path, assets or {})
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: XML parse error 3:
+Error=XML_ERROR_FILE_NOT_FOUND ErrorID=3 (0x3) Line number=0: filename=/home/yunqiliu/octo/examples/assets/bimanual_viperx_transfer_cube.xml

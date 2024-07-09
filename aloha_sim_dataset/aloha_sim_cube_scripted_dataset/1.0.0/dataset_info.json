@@ -1,0 +1,28 @@
+{
+  "citation": "// TODO(example_dataset): BibTeX citation",
+  "description": "TODO(example_dataset): Markdown description of your dataset.\nDescription is **formatted** as markdown.\n\nIt should also contain any processing which has been applied (if any),\n(e.g. corrupted example skipped, images cropped,...):",
+  "fileFormat": "tfrecord",
+  "moduleName": "aloha_sim_cube_scripted_dataset.aloha_sim_cube_scripted_dataset",
+  "name": "aloha_sim_cube_scripted_dataset",
+  "releaseNotes": {
+    "1.0.0": "Initial release."
+  },
+  "splits": [
+    {
+      "filepathTemplate": "{DATASET}-{SPLIT}.{FILEFORMAT}-{SHARD_X_OF_Y}",
+      "name": "train",
+      "numBytes": "562810749",
+      "shardLengths": [
+        "6",
+        "6",
+        "7",
+        "6",
+        "6",
+        "7",
+        "6",
+        "6"
+      ]
+    }
+  ],
+  "version": "1.0.0"
+}

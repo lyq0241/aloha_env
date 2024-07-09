@@ -1,0 +1,43 @@
+Fetching 8 files: 100%|███████████████████████████████████████████████████████████████████████| 8/8 [00:00<00:00, 19163.01it/s]
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+W0709 11:30:27.404237 138832955930432 block_transformer.py:295] Using old attention computation from released December models.
+I0709 11:30:33.860311 138832955930432 checkpointer.py:164] Restoring item from /home/yunqiliu/.cache/huggingface/hub/models--rail-berkeley--octo-small/snapshots/03d88976c54a58e10480d2043a8c762b35bc2611/270000/default.
+I0709 11:30:34.568902 138832955930432 checkpointer.py:166] Finished restoring checkpoint from /home/yunqiliu/.cache/huggingface/hub/models--rail-berkeley--octo-small/snapshots/03d88976c54a58e10480d2043a8c762b35bc2611/270000/default.
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/spaces/box.py:127: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+finish loading the model
+Key 'action' not found in dataset_statistics
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/utils/passive_env_checker.py:165: UserWarning: [33mWARN: The obs returned by the `reset()` method is not within the observation space.
+  logger.warn(f"{pre} is not within the observation space.")
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/utils/passive_env_checker.py:141: UserWarning: [33mWARN: The obs returned by the `reset()` method was expecting numpy array dtype to be float32, actual type: float64
+  logger.warn(
+Fetching 8 files: 100%|███████████████████████████████████████████████████████████████████████| 8/8 [00:00<00:00, 55279.13it/s]
+W0709 11:30:38.038756 138832955930432 octo_model.py:545] 'observations' is missing items compared to example_batch: {'pad_mask_dict/image_wrist', 'pad_mask', 'pad_mask_dict/image_primary', 'timestep', 'pad_mask_dict/proprio', 'pad_mask_dict/timestep', 'timestep_pad_mask', 'image_wrist'}
+keys dict_keys(['image_primary', 'proprio'])
+example_batch['observation'].keys():dict_keys(['image_primary', 'image_wrist', 'pad_mask', 'pad_mask_dict', 'proprio', 'timestep'])
+W0709 11:30:39.365546 138832955930432 tokenizers.py:25] No pad_mask_dict found. Nothing will be masked.
+I0709 11:30:39.373854 138832955930432 tokenizers.py:110] No image inputs matching ('image_wrist',) were found.Skipping tokenizer entirely.
+W0709 11:30:39.374145 138832955930432 octo_module.py:194] Skipping observation tokenizer: obs_wrist
+W0709 11:30:39.377466 138832955930432 block_transformer.py:295] Using old attention computation from released December models.
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/utils/passive_env_checker.py:233: DeprecationWarning: `np.bool8` is a deprecated alias for `np.bool_`.  (Deprecated NumPy 1.24)
+  if not isinstance(terminated, (bool, np.bool8)):
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/utils/passive_env_checker.py:165: UserWarning: [33mWARN: The obs returned by the `step()` method is not within the observation space.
+  logger.warn(f"{pre} is not within the observation space.")
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/utils/passive_env_checker.py:141: UserWarning: [33mWARN: The obs returned by the `step()` method was expecting numpy array dtype to be float32, actual type: float64
+  logger.warn(
+Traceback (most recent call last):
+  File "/home/yunqiliu/octo/examples/03_eval_finetuned.py", line 143, in <module>
+    app.run(main)
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/absl/app.py", line 308, in run
+    _run_main(main, args)
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/absl/app.py", line 254, in _run_main
+    sys.exit(main(argv))
+             ^^^^^^^^^^
+  File "/home/yunqiliu/octo/examples/03_eval_finetuned.py", line 138, in main
+    {"rollout_video": wandb.Video(np.array(images).transpose(0, 3, 1, 2)[::2])}
+                                  ^^^^^^^^^^^^^^^^
+ValueError: setting an array element with a sequence. The requested array has an inhomogeneous shape after 1 dimensions. The detected shape was (400,) + inhomogeneous part.
+Episode return: 0.0

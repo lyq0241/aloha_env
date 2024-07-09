@@ -1,0 +1,47 @@
+I0628 16:47:11.836364 136333131450176 03_eval_finetuned.py:48] Loading finetuned model...
+Fetching 8 files: 100%|███████████████████████████████████████████████████████████████████████| 8/8 [00:00<00:00, 29076.63it/s]
+error: path is None
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+W0628 16:47:16.179546 136333131450176 block_transformer.py:295] Using old attention computation from released December models.
+I0628 16:47:22.721145 136333131450176 checkpointer.py:164] Restoring item from /home/yunqiliu/.cache/huggingface/hub/models--rail-berkeley--octo-small/snapshots/03d88976c54a58e10480d2043a8c762b35bc2611/270000/default.
+I0628 16:47:23.393882 136333131450176 checkpointer.py:166] Finished restoring checkpoint from /home/yunqiliu/.cache/huggingface/hub/models--rail-berkeley--octo-small/snapshots/03d88976c54a58e10480d2043a8c762b35bc2611/270000/default.
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+finish loading the model
+Key 'action' not found in dataset_statistics
+metadata.keys dict_keys(['action', 'num_trajectories', 'num_transitions', 'proprio'])
+obs keys dict_keys(['image_primary', 'proprio'])
+prio shape (14,)
+metadata shape (8,)
+keys dict_keys(['image_primary', 'proprio', 'timestep_pad_mask'])
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/spaces/box.py:127: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/utils/passive_env_checker.py:137: UserWarning: [33mWARN: The obs returned by the `reset()` method was expecting a numpy array, actual type: <class 'tensorflow.python.framework.ops.EagerTensor'>
+  logger.warn(
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/spaces/box.py:227: UserWarning: [33mWARN: Casting input x to numpy array.
+  logger.warn("Casting input x to numpy array.")
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/utils/passive_env_checker.py:137: UserWarning: [33mWARN: The obs returned by the `reset()` method was expecting a numpy array, actual type: <class 'jaxlib.xla_extension.ArrayImpl'>
+  logger.warn(
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/utils/passive_env_checker.py:165: UserWarning: [33mWARN: The obs returned by the `reset()` method is not within the observation space.
+  logger.warn(f"{pre} is not within the observation space.")
+W0628 16:47:24.805558 136333131450176 octo_model.py:534] 'observations' is missing items compared to example_batch: {'pad_mask_dict/proprio', 'timestep', 'pad_mask', 'pad_mask_dict/image_primary', 'image_wrist', 'pad_mask_dict/timestep', 'pad_mask_dict/image_wrist'}
+W0628 16:47:25.810449 136333131450176 tokenizers.py:25] No pad_mask_dict found. Nothing will be masked.
+I0628 16:47:25.817272 136333131450176 tokenizers.py:110] No image inputs matching ('image_wrist',) were found.Skipping tokenizer entirely.
+W0628 16:47:25.817553 136333131450176 octo_module.py:194] Skipping observation tokenizer: obs_wrist
+W0628 16:47:25.820340 136333131450176 block_transformer.py:295] Using old attention computation from released December models.
+Traceback (most recent call last):
+  File "/home/yunqiliu/octo/examples/03_eval_finetuned.py", line 121, in <module>
+    app.run(main)
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/absl/app.py", line 308, in run
+    _run_main(main, args)
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/absl/app.py", line 254, in _run_main
+    sys.exit(main(argv))
+             ^^^^^^^^^^
+  File "/home/yunqiliu/octo/examples/03_eval_finetuned.py", line 107, in main
+    obs, reward, done, trunc, info = env.step(actions)
+                                     ^^^^^^^^^^^^^^^^^
+  File "/home/yunqiliu/octo/examples/octo/utils/gym_wrappers.py", line 133, in step
+    assert len(actions) >= self.exec_horizon
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

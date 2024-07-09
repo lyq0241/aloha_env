@@ -1,0 +1,4 @@
+I0701 19:27:18.737051 127676782675776 03_eval_finetuned_copy.py:52] Loading finetuned model...
+
+Loading checkpoint shards: 100%|█████████████████████████████████████████████████| 3/3 [00:02<00:00,  1.32it/s]
+finish loading the model

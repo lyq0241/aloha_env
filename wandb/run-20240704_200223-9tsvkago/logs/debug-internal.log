@@ -1,0 +1,263 @@
+2024-07-04 20:02:23,543 INFO    StreamThr :221919 [internal.py:wandb_internal():85] W&B internal server running at pid: 221919, started at: 2024-07-04 20:02:23.542505
+2024-07-04 20:02:23,546 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: status
+2024-07-04 20:02:23,547 INFO    WriterThread:221919 [datastore.py:open_for_write():87] open: /home/yunqiliu/octo/examples/wandb/run-20240704_200223-9tsvkago/run-9tsvkago.wandb
+2024-07-04 20:02:23,548 DEBUG   SenderThread:221919 [sender.py:send():379] send: header
+2024-07-04 20:02:23,553 DEBUG   SenderThread:221919 [sender.py:send():379] send: run
+2024-07-04 20:02:24,229 INFO    SenderThread:221919 [dir_watcher.py:__init__():211] watching files in: /home/yunqiliu/octo/examples/wandb/run-20240704_200223-9tsvkago/files
+2024-07-04 20:02:24,229 INFO    SenderThread:221919 [sender.py:_start_run_threads():1188] run started: 9tsvkago with start time 1720094543.54252
+2024-07-04 20:02:24,249 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: check_version
+2024-07-04 20:02:24,250 DEBUG   SenderThread:221919 [sender.py:send_request():406] send_request: check_version
+2024-07-04 20:02:24,528 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: run_start
+2024-07-04 20:02:24,543 DEBUG   HandlerThread:221919 [system_info.py:__init__():26] System info init
+2024-07-04 20:02:24,543 DEBUG   HandlerThread:221919 [system_info.py:__init__():41] System info init done
+2024-07-04 20:02:24,543 INFO    HandlerThread:221919 [system_monitor.py:start():194] Starting system monitor
+2024-07-04 20:02:24,543 INFO    SystemMonitor:221919 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-07-04 20:02:24,544 INFO    HandlerThread:221919 [system_monitor.py:probe():214] Collecting system info
+2024-07-04 20:02:24,544 INFO    SystemMonitor:221919 [interfaces.py:start():188] Started cpu monitoring
+2024-07-04 20:02:24,546 INFO    SystemMonitor:221919 [interfaces.py:start():188] Started disk monitoring
+2024-07-04 20:02:24,548 INFO    SystemMonitor:221919 [interfaces.py:start():188] Started gpu monitoring
+2024-07-04 20:02:24,549 INFO    SystemMonitor:221919 [interfaces.py:start():188] Started memory monitoring
+2024-07-04 20:02:24,549 INFO    SystemMonitor:221919 [interfaces.py:start():188] Started network monitoring
+2024-07-04 20:02:24,571 DEBUG   HandlerThread:221919 [system_info.py:probe():152] Probing system
+2024-07-04 20:02:24,574 DEBUG   HandlerThread:221919 [system_info.py:_probe_git():137] Probing git
+2024-07-04 20:02:24,582 DEBUG   HandlerThread:221919 [system_info.py:_probe_git():145] Probing git done
+2024-07-04 20:02:24,582 DEBUG   HandlerThread:221919 [system_info.py:probe():200] Probing system done
+2024-07-04 20:02:24,582 DEBUG   HandlerThread:221919 [system_monitor.py:probe():223] {'os': 'Linux-6.5.0-41-generic-x86_64-with-glibc2.35', 'python': '3.11.9', 'heartbeatAt': '2024-07-04T12:02:24.571715', 'startedAt': '2024-07-04T12:02:23.536874', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/yunqiliu/octo/examples/03_eval_finetuned_copy_copy.py', 'codePathLocal': '03_eval_finetuned_copy_copy.py', 'codePath': 'examples/03_eval_finetuned_copy_copy.py', 'git': {'remote': 'https://github.com/octo-models/octo.git', 'commit': '5eaa5c6960398925ae6f52ed072d843d2f3ecb0b'}, 'email': None, 'root': '/home/yunqiliu/octo', 'host': 'msrait-03', 'username': 'yunqiliu', 'executable': '/home/yunqiliu/anaconda3/envs/torch/bin/python', 'cpu_count': 32, 'cpu_count_logical': 64, 'cpu_freq': {'current': 1108.009984375, 'min': 800.0, 'max': 3400.0}, 'cpu_freq_per_core': [{'current': 800.145, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.25, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 2200.0, 'min': 800.0, 'max': 3400.0}, {'current': 1200.0, 'min': 800.0, 'max': 3400.0}, {'current': 2200.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 2200.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 2400.0, 'min': 800.0, 'max': 3400.0}, {'current': 1011.692, 'min': 800.0, 'max': 3400.0}, {'current': 1700.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 1300.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.893, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 2200.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 799.23, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 3300.0, 'min': 800.0, 'max': 3400.0}, {'current': 2200.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 2203.225, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}], 'disk': {'/': {'total': 1632.7536506652832, 'used': 260.1222038269043}}, 'gpu': 'NVIDIA RTX A6000', 'gpu_count': 4, 'gpu_devices': [{'name': 'NVIDIA RTX A6000', 'memory_total': 51527024640}, {'name': 'NVIDIA RTX A6000', 'memory_total': 51527024640}, {'name': 'NVIDIA RTX A6000', 'memory_total': 51527024640}, {'name': 'NVIDIA RTX A6000', 'memory_total': 51527024640}], 'memory': {'total': 377.24077224731445}}
+2024-07-04 20:02:24,582 INFO    HandlerThread:221919 [system_monitor.py:probe():224] Finished collecting system info
+2024-07-04 20:02:24,582 INFO    HandlerThread:221919 [system_monitor.py:probe():227] Publishing system info
+2024-07-04 20:02:24,582 DEBUG   HandlerThread:221919 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2024-07-04 20:02:25,230 INFO    Thread-12 :221919 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yunqiliu/octo/examples/wandb/run-20240704_200223-9tsvkago/files/conda-environment.yaml
+2024-07-04 20:02:30,761 DEBUG   HandlerThread:221919 [system_info.py:_save_conda():224] Saving conda packages done
+2024-07-04 20:02:30,763 INFO    HandlerThread:221919 [system_monitor.py:probe():229] Finished publishing system info
+2024-07-04 20:02:30,772 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: status_report
+2024-07-04 20:02:30,772 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-04 20:02:30,774 DEBUG   SenderThread:221919 [sender.py:send():379] send: files
+2024-07-04 20:02:30,774 INFO    SenderThread:221919 [sender.py:_save_file():1454] saving file wandb-metadata.json with policy now
+2024-07-04 20:02:30,931 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: python_packages
+2024-07-04 20:02:30,931 DEBUG   SenderThread:221919 [sender.py:send_request():406] send_request: python_packages
+2024-07-04 20:02:30,932 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-04 20:02:30,933 DEBUG   SenderThread:221919 [sender.py:send_request():406] send_request: stop_status
+2024-07-04 20:02:30,937 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-04 20:02:31,231 INFO    Thread-12 :221919 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240704_200223-9tsvkago/files/conda-environment.yaml
+2024-07-04 20:02:31,232 INFO    Thread-12 :221919 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yunqiliu/octo/examples/wandb/run-20240704_200223-9tsvkago/files/wandb-metadata.json
+2024-07-04 20:02:31,232 INFO    Thread-12 :221919 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yunqiliu/octo/examples/wandb/run-20240704_200223-9tsvkago/files/requirements.txt
+2024-07-04 20:02:31,400 DEBUG   SenderThread:221919 [sender.py:send():379] send: telemetry
+2024-07-04 20:02:31,920 INFO    wandb-upload_0:221919 [upload_job.py:push():130] Uploaded file /tmp/tmpz69jknyuwandb/t6c73bwk-wandb-metadata.json
+2024-07-04 20:02:31,933 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-04 20:02:33,160 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-04 20:02:33,232 INFO    Thread-12 :221919 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yunqiliu/octo/examples/wandb/run-20240704_200223-9tsvkago/files/output.log
+2024-07-04 20:02:34,159 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-04 20:02:34,585 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: status_report
+2024-07-04 20:02:35,160 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-04 20:02:35,233 INFO    Thread-12 :221919 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240704_200223-9tsvkago/files/output.log
+2024-07-04 20:02:36,159 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-04 20:02:37,160 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-04 20:02:37,234 INFO    Thread-12 :221919 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240704_200223-9tsvkago/files/output.log
+2024-07-04 20:02:38,160 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-04 20:02:39,702 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: status_report
+2024-07-04 20:02:39,744 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-04 20:02:40,732 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-04 20:02:41,236 INFO    Thread-12 :221919 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240704_200223-9tsvkago/files/output.log
+2024-07-04 20:02:41,733 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-04 20:02:42,237 INFO    Thread-12 :221919 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240704_200223-9tsvkago/files/output.log
+2024-07-04 20:02:42,740 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-04 20:02:43,237 INFO    Thread-12 :221919 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240704_200223-9tsvkago/files/output.log
+2024-07-04 20:02:43,740 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-04 20:02:44,238 INFO    Thread-12 :221919 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240704_200223-9tsvkago/files/output.log
+2024-07-04 20:02:44,742 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-04 20:02:44,967 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: status_report
+2024-07-04 20:02:45,741 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-04 20:02:45,943 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-04 20:02:45,943 DEBUG   SenderThread:221919 [sender.py:send_request():406] send_request: stop_status
+2024-07-04 20:02:46,735 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-04 20:02:47,735 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-04 20:02:48,735 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-04 20:02:49,735 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-04 20:02:50,249 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: status_report
+2024-07-04 20:02:50,735 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-04 20:02:51,736 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-04 20:02:52,736 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-04 20:02:53,736 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-04 20:02:54,736 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-04 20:02:55,736 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-04 20:02:55,941 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: status_report
+2024-07-04 20:02:56,243 INFO    Thread-12 :221919 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240704_200223-9tsvkago/files/config.yaml
+2024-07-04 20:02:56,737 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-04 20:02:57,737 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-04 20:02:58,737 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-04 20:02:59,737 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-04 20:03:00,737 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-04 20:03:00,933 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-04 20:03:00,934 DEBUG   SenderThread:221919 [sender.py:send_request():406] send_request: stop_status
+2024-07-04 20:03:01,225 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: status_report
+2024-07-04 20:03:01,737 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-04 20:03:02,737 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-04 20:03:03,737 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-04 20:03:04,234 DEBUG   SenderThread:221919 [sender.py:send():379] send: exit
+2024-07-04 20:03:04,234 INFO    SenderThread:221919 [sender.py:send_exit():586] handling exit code: 1
+2024-07-04 20:03:04,235 INFO    SenderThread:221919 [sender.py:send_exit():588] handling runtime: 39
+2024-07-04 20:03:04,238 INFO    SenderThread:221919 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-04 20:03:04,239 INFO    SenderThread:221919 [sender.py:send_exit():594] send defer
+2024-07-04 20:03:04,239 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: defer
+2024-07-04 20:03:04,240 INFO    HandlerThread:221919 [handler.py:handle_request_defer():184] handle defer: 0
+2024-07-04 20:03:04,240 DEBUG   SenderThread:221919 [sender.py:send_request():406] send_request: defer
+2024-07-04 20:03:04,240 INFO    SenderThread:221919 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-07-04 20:03:04,240 INFO    SenderThread:221919 [sender.py:transition_state():614] send defer: 1
+2024-07-04 20:03:04,241 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: defer
+2024-07-04 20:03:04,241 INFO    HandlerThread:221919 [handler.py:handle_request_defer():184] handle defer: 1
+2024-07-04 20:03:04,241 DEBUG   SenderThread:221919 [sender.py:send_request():406] send_request: defer
+2024-07-04 20:03:04,242 INFO    SenderThread:221919 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-07-04 20:03:04,242 INFO    SenderThread:221919 [sender.py:transition_state():614] send defer: 2
+2024-07-04 20:03:04,242 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: defer
+2024-07-04 20:03:04,242 INFO    HandlerThread:221919 [handler.py:handle_request_defer():184] handle defer: 2
+2024-07-04 20:03:04,242 INFO    HandlerThread:221919 [system_monitor.py:finish():203] Stopping system monitor
+2024-07-04 20:03:04,243 DEBUG   SystemMonitor:221919 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-07-04 20:03:04,243 DEBUG   SystemMonitor:221919 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-07-04 20:03:04,243 DEBUG   SystemMonitor:221919 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-07-04 20:03:04,246 INFO    HandlerThread:221919 [interfaces.py:finish():200] Joined cpu monitor
+2024-07-04 20:03:04,247 INFO    HandlerThread:221919 [interfaces.py:finish():200] Joined disk monitor
+2024-07-04 20:03:04,249 INFO    Thread-12 :221919 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yunqiliu/octo/examples/wandb/run-20240704_200223-9tsvkago/files/wandb-summary.json
+2024-07-04 20:03:05,258 INFO    Thread-12 :221919 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240704_200223-9tsvkago/files/output.log
+2024-07-04 20:03:06,448 INFO    Thread-12 :221919 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240704_200223-9tsvkago/files/output.log
+2024-07-04 20:03:58,917 INFO    HandlerThread:221919 [interfaces.py:finish():200] Joined gpu monitor
+2024-07-04 20:03:58,917 INFO    HandlerThread:221919 [interfaces.py:finish():200] Joined memory monitor
+2024-07-04 20:03:58,918 INFO    HandlerThread:221919 [interfaces.py:finish():200] Joined network monitor
+2024-07-04 20:03:58,918 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-04 20:03:58,918 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: status_report
+2024-07-04 20:03:58,918 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-04 20:03:58,918 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: status_report
+2024-07-04 20:03:58,918 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-04 20:03:58,919 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: status_report
+2024-07-04 20:03:58,919 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-04 20:03:58,919 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: status_report
+2024-07-04 20:03:58,920 DEBUG   SenderThread:221919 [sender.py:send_request():406] send_request: defer
+2024-07-04 20:03:58,921 INFO    SenderThread:221919 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-07-04 20:03:58,921 INFO    SenderThread:221919 [sender.py:transition_state():614] send defer: 3
+2024-07-04 20:03:58,920 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-04 20:03:58,921 DEBUG   SenderThread:221919 [sender.py:send():379] send: stats
+2024-07-04 20:03:58,921 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: status_report
+2024-07-04 20:03:58,922 DEBUG   SenderThread:221919 [sender.py:send_request():406] send_request: poll_exit
+2024-07-04 20:03:58,925 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-04 20:03:58,927 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: status_report
+2024-07-04 20:03:58,927 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: status_report
+2024-07-04 20:03:58,927 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-04 20:03:58,927 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: status_report
+2024-07-04 20:03:58,927 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-04 20:03:58,927 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: status_report
+2024-07-04 20:03:58,927 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-04 20:03:58,927 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: status_report
+2024-07-04 20:03:58,928 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-04 20:03:58,928 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: defer
+2024-07-04 20:03:58,928 INFO    HandlerThread:221919 [handler.py:handle_request_defer():184] handle defer: 3
+2024-07-04 20:03:58,929 DEBUG   SenderThread:221919 [sender.py:send_request():406] send_request: defer
+2024-07-04 20:03:58,929 INFO    SenderThread:221919 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-07-04 20:03:58,929 INFO    SenderThread:221919 [sender.py:transition_state():614] send defer: 4
+2024-07-04 20:03:58,929 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: defer
+2024-07-04 20:03:58,929 INFO    HandlerThread:221919 [handler.py:handle_request_defer():184] handle defer: 4
+2024-07-04 20:03:58,930 DEBUG   SenderThread:221919 [sender.py:send_request():406] send_request: defer
+2024-07-04 20:03:58,930 INFO    SenderThread:221919 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-07-04 20:03:58,930 INFO    SenderThread:221919 [sender.py:transition_state():614] send defer: 5
+2024-07-04 20:03:58,930 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: defer
+2024-07-04 20:03:58,930 INFO    HandlerThread:221919 [handler.py:handle_request_defer():184] handle defer: 5
+2024-07-04 20:03:58,931 DEBUG   SenderThread:221919 [sender.py:send():379] send: summary
+2024-07-04 20:03:58,933 INFO    SenderThread:221919 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-04 20:03:58,933 DEBUG   SenderThread:221919 [sender.py:send_request():406] send_request: defer
+2024-07-04 20:03:58,933 INFO    SenderThread:221919 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-07-04 20:03:58,933 INFO    SenderThread:221919 [sender.py:transition_state():614] send defer: 6
+2024-07-04 20:03:58,934 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: defer
+2024-07-04 20:03:58,934 INFO    HandlerThread:221919 [handler.py:handle_request_defer():184] handle defer: 6
+2024-07-04 20:03:58,935 DEBUG   SenderThread:221919 [sender.py:send_request():406] send_request: defer
+2024-07-04 20:03:58,935 INFO    SenderThread:221919 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-07-04 20:03:58,935 INFO    SenderThread:221919 [sender.py:transition_state():614] send defer: 7
+2024-07-04 20:03:58,935 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: status_report
+2024-07-04 20:03:58,936 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: defer
+2024-07-04 20:03:58,936 INFO    HandlerThread:221919 [handler.py:handle_request_defer():184] handle defer: 7
+2024-07-04 20:03:58,936 DEBUG   SenderThread:221919 [sender.py:send_request():406] send_request: defer
+2024-07-04 20:03:58,937 INFO    SenderThread:221919 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-07-04 20:03:59,547 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-04 20:03:59,655 INFO    Thread-12 :221919 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240704_200223-9tsvkago/files/wandb-summary.json
+2024-07-04 20:04:02,344 INFO    SenderThread:221919 [sender.py:transition_state():614] send defer: 8
+2024-07-04 20:04:02,344 DEBUG   SenderThread:221919 [sender.py:send_request():406] send_request: poll_exit
+2024-07-04 20:04:02,346 INFO    Thread-12 :221919 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240704_200223-9tsvkago/files/output.log
+2024-07-04 20:04:02,346 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: defer
+2024-07-04 20:04:02,347 INFO    HandlerThread:221919 [handler.py:handle_request_defer():184] handle defer: 8
+2024-07-04 20:04:02,348 DEBUG   SenderThread:221919 [sender.py:send_request():406] send_request: defer
+2024-07-04 20:04:02,348 INFO    SenderThread:221919 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-07-04 20:04:02,348 INFO    SenderThread:221919 [job_builder.py:build():440] Attempting to build job artifact
+2024-07-04 20:04:02,348 INFO    SenderThread:221919 [job_builder.py:_get_source_type():569] is repo sourced job
+2024-07-04 20:04:02,367 INFO    SenderThread:221919 [job_builder.py:build():545] adding wandb-job metadata file
+2024-07-04 20:04:02,370 INFO    SenderThread:221919 [sender.py:transition_state():614] send defer: 9
+2024-07-04 20:04:02,371 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: defer
+2024-07-04 20:04:02,371 INFO    HandlerThread:221919 [handler.py:handle_request_defer():184] handle defer: 9
+2024-07-04 20:04:02,372 DEBUG   SenderThread:221919 [sender.py:send():379] send: artifact
+2024-07-04 20:04:03,347 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-04 20:04:03,585 INFO    SenderThread:221919 [sender.py:send_artifact():1530] sent artifact job-https___github.com_octo-models_octo.git_examples_03_eval_finetuned_copy_copy.py - {'id': 'QXJ0aWZhY3Q6OTQzMzk1OTA0', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjI0MzY3MjEwNw==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6OTQzMzk1OTA0', 'versionIndex': 0}}}
+2024-07-04 20:04:03,585 DEBUG   SenderThread:221919 [sender.py:send_request():406] send_request: defer
+2024-07-04 20:04:03,585 INFO    SenderThread:221919 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-07-04 20:04:03,585 INFO    SenderThread:221919 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-07-04 20:04:04,349 INFO    SenderThread:221919 [dir_watcher.py:finish():388] scan: /home/yunqiliu/octo/examples/wandb/run-20240704_200223-9tsvkago/files
+2024-07-04 20:04:04,350 INFO    SenderThread:221919 [dir_watcher.py:finish():402] scan save: /home/yunqiliu/octo/examples/wandb/run-20240704_200223-9tsvkago/files/wandb-metadata.json wandb-metadata.json
+2024-07-04 20:04:04,350 INFO    SenderThread:221919 [dir_watcher.py:finish():402] scan save: /home/yunqiliu/octo/examples/wandb/run-20240704_200223-9tsvkago/files/wandb-summary.json wandb-summary.json
+2024-07-04 20:04:04,350 INFO    SenderThread:221919 [dir_watcher.py:finish():402] scan save: /home/yunqiliu/octo/examples/wandb/run-20240704_200223-9tsvkago/files/conda-environment.yaml conda-environment.yaml
+2024-07-04 20:04:04,351 INFO    SenderThread:221919 [dir_watcher.py:finish():402] scan save: /home/yunqiliu/octo/examples/wandb/run-20240704_200223-9tsvkago/files/requirements.txt requirements.txt
+2024-07-04 20:04:04,351 INFO    SenderThread:221919 [dir_watcher.py:finish():402] scan save: /home/yunqiliu/octo/examples/wandb/run-20240704_200223-9tsvkago/files/config.yaml config.yaml
+2024-07-04 20:04:04,351 INFO    SenderThread:221919 [dir_watcher.py:finish():402] scan save: /home/yunqiliu/octo/examples/wandb/run-20240704_200223-9tsvkago/files/output.log output.log
+2024-07-04 20:04:04,352 INFO    SenderThread:221919 [sender.py:transition_state():614] send defer: 10
+2024-07-04 20:04:04,352 DEBUG   SenderThread:221919 [sender.py:send_request():406] send_request: poll_exit
+2024-07-04 20:04:04,353 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: defer
+2024-07-04 20:04:04,353 INFO    HandlerThread:221919 [handler.py:handle_request_defer():184] handle defer: 10
+2024-07-04 20:04:04,354 DEBUG   SenderThread:221919 [sender.py:send_request():406] send_request: defer
+2024-07-04 20:04:04,354 INFO    SenderThread:221919 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-07-04 20:04:04,354 INFO    SenderThread:221919 [file_pusher.py:finish():169] shutting down file pusher
+2024-07-04 20:04:05,010 INFO    wandb-upload_1:221919 [upload_job.py:push():130] Uploaded file /home/yunqiliu/octo/examples/wandb/run-20240704_200223-9tsvkago/files/conda-environment.yaml
+2024-07-04 20:04:05,349 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-04 20:04:05,350 DEBUG   SenderThread:221919 [sender.py:send_request():406] send_request: poll_exit
+2024-07-04 20:04:05,393 INFO    wandb-upload_2:221919 [upload_job.py:push():130] Uploaded file /home/yunqiliu/octo/examples/wandb/run-20240704_200223-9tsvkago/files/requirements.txt
+2024-07-04 20:04:05,445 INFO    wandb-upload_3:221919 [upload_job.py:push():130] Uploaded file /home/yunqiliu/octo/examples/wandb/run-20240704_200223-9tsvkago/files/config.yaml
+2024-07-04 20:04:05,522 INFO    wandb-upload_0:221919 [upload_job.py:push():130] Uploaded file /home/yunqiliu/octo/examples/wandb/run-20240704_200223-9tsvkago/files/wandb-summary.json
+2024-07-04 20:04:06,179 INFO    wandb-upload_4:221919 [upload_job.py:push():130] Uploaded file /home/yunqiliu/octo/examples/wandb/run-20240704_200223-9tsvkago/files/output.log
+2024-07-04 20:04:06,350 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-04 20:04:06,351 DEBUG   SenderThread:221919 [sender.py:send_request():406] send_request: poll_exit
+2024-07-04 20:04:06,379 INFO    Thread-11 (_thread_body):221919 [sender.py:transition_state():614] send defer: 11
+2024-07-04 20:04:06,380 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: defer
+2024-07-04 20:04:06,380 INFO    HandlerThread:221919 [handler.py:handle_request_defer():184] handle defer: 11
+2024-07-04 20:04:06,381 DEBUG   SenderThread:221919 [sender.py:send_request():406] send_request: defer
+2024-07-04 20:04:06,382 INFO    SenderThread:221919 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-07-04 20:04:06,382 INFO    SenderThread:221919 [file_pusher.py:join():175] waiting for file pusher
+2024-07-04 20:04:06,382 INFO    SenderThread:221919 [sender.py:transition_state():614] send defer: 12
+2024-07-04 20:04:06,382 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: defer
+2024-07-04 20:04:06,383 INFO    HandlerThread:221919 [handler.py:handle_request_defer():184] handle defer: 12
+2024-07-04 20:04:06,383 DEBUG   SenderThread:221919 [sender.py:send_request():406] send_request: defer
+2024-07-04 20:04:06,383 INFO    SenderThread:221919 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-07-04 20:04:06,384 INFO    SenderThread:221919 [file_stream.py:finish():601] file stream finish called
+2024-07-04 20:04:07,054 INFO    SenderThread:221919 [file_stream.py:finish():605] file stream finish is done
+2024-07-04 20:04:07,054 INFO    SenderThread:221919 [sender.py:transition_state():614] send defer: 13
+2024-07-04 20:04:07,054 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: defer
+2024-07-04 20:04:07,054 INFO    HandlerThread:221919 [handler.py:handle_request_defer():184] handle defer: 13
+2024-07-04 20:04:07,054 DEBUG   SenderThread:221919 [sender.py:send_request():406] send_request: defer
+2024-07-04 20:04:07,055 INFO    SenderThread:221919 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-07-04 20:04:07,055 INFO    SenderThread:221919 [sender.py:transition_state():614] send defer: 14
+2024-07-04 20:04:07,055 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: defer
+2024-07-04 20:04:07,055 INFO    HandlerThread:221919 [handler.py:handle_request_defer():184] handle defer: 14
+2024-07-04 20:04:07,056 DEBUG   SenderThread:221919 [sender.py:send():379] send: final
+2024-07-04 20:04:07,056 DEBUG   SenderThread:221919 [sender.py:send():379] send: footer
+2024-07-04 20:04:07,056 DEBUG   SenderThread:221919 [sender.py:send_request():406] send_request: defer
+2024-07-04 20:04:07,056 INFO    SenderThread:221919 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-07-04 20:04:07,057 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-04 20:04:07,057 DEBUG   SenderThread:221919 [sender.py:send_request():406] send_request: poll_exit
+2024-07-04 20:04:07,058 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: server_info
+2024-07-04 20:04:07,058 DEBUG   SenderThread:221919 [sender.py:send_request():406] send_request: server_info
+2024-07-04 20:04:07,062 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-04 20:04:07,063 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: get_summary
+2024-07-04 20:04:07,063 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: sampled_history
+2024-07-04 20:04:07,064 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-04 20:04:07,286 DEBUG   SenderThread:221919 [sender.py:send_request():406] send_request: poll_exit
+2024-07-04 20:04:07,287 INFO    MainThread:221919 [wandb_run.py:_footer_history_summary_info():3991] rendering history
+2024-07-04 20:04:07,287 INFO    MainThread:221919 [wandb_run.py:_footer_history_summary_info():4023] rendering summary
+2024-07-04 20:04:07,287 INFO    MainThread:221919 [wandb_run.py:_footer_sync_info():3950] logging synced files
+2024-07-04 20:04:07,288 DEBUG   HandlerThread:221919 [handler.py:handle_request():158] handle_request: shutdown
+2024-07-04 20:04:07,288 INFO    HandlerThread:221919 [handler.py:finish():882] shutting down handler
+2024-07-04 20:04:08,063 INFO    WriterThread:221919 [datastore.py:close():296] close: /home/yunqiliu/octo/examples/wandb/run-20240704_200223-9tsvkago/run-9tsvkago.wandb
+2024-07-04 20:04:08,287 INFO    SenderThread:221919 [sender.py:finish():1608] shutting down sender
+2024-07-04 20:04:08,287 INFO    SenderThread:221919 [file_pusher.py:finish():169] shutting down file pusher
+2024-07-04 20:04:08,287 INFO    SenderThread:221919 [file_pusher.py:join():175] waiting for file pusher

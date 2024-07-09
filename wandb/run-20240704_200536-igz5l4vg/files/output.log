@@ -1,0 +1,75 @@
+
+
+Loading checkpoint shards: 100%|███████████████████████████████████████████████████████████| 3/3 [00:02<00:00,  1.31it/s]
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/spaces/box.py:127: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+finish loading the model
+try loading some data for initialization
+finish loading the data for initialization
+metadata is dict_keys(['task_description', 'scene_description', 'mean', 'std', 'frame_number', 'image_paths', 'actions', 'clip_description', 'trajectory_id', 'view'])
+env=gym.make.....
+obs, info = env.reset()
+iteration starts: we will sample actions
+finish sampling actions
+iteration starts: we will sample actions
+finish sampling actions
+iteration starts: we will sample actions
+finish sampling actions
+iteration starts: we will sample actions
+finish sampling actions
+iteration starts: we will sample actions
+finish sampling actions
+iteration starts: we will sample actions
+finish sampling actions
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/utils/passive_env_checker.py:137: UserWarning: [33mWARN: The obs returned by the `reset()` method was expecting a numpy array, actual type: <class 'tensorflow.python.framework.ops.EagerTensor'>
+  logger.warn(
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/spaces/box.py:227: UserWarning: [33mWARN: Casting input x to numpy array.
+  logger.warn("Casting input x to numpy array.")
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/utils/passive_env_checker.py:137: UserWarning: [33mWARN: The obs returned by the `reset()` method was expecting a numpy array, actual type: <class 'jaxlib.xla_extension.ArrayImpl'>
+  logger.warn(
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/utils/passive_env_checker.py:165: UserWarning: [33mWARN: The obs returned by the `reset()` method is not within the observation space.
+  logger.warn(f"{pre} is not within the observation space.")
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/utils/passive_env_checker.py:233: DeprecationWarning: `np.bool8` is a deprecated alias for `np.bool_`.  (Deprecated NumPy 1.24)
+  if not isinstance(terminated, (bool, np.bool8)):
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/utils/passive_env_checker.py:137: UserWarning: [33mWARN: The obs returned by the `step()` method was expecting a numpy array, actual type: <class 'tensorflow.python.framework.ops.EagerTensor'>
+  logger.warn(
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/utils/passive_env_checker.py:137: UserWarning: [33mWARN: The obs returned by the `step()` method was expecting a numpy array, actual type: <class 'jaxlib.xla_extension.ArrayImpl'>
+  logger.warn(
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/utils/passive_env_checker.py:165: UserWarning: [33mWARN: The obs returned by the `step()` method is not within the observation space.
+  logger.warn(f"{pre} is not within the observation space.")
+Traceback (most recent call last):
+  File "/home/yunqiliu/octo/examples/03_eval_finetuned_copy_copy.py", line 286, in <module>
+    app.run(main)
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/absl/app.py", line 308, in run
+    _run_main(main, args)
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/absl/app.py", line 254, in _run_main
+    sys.exit(main(argv))
+             ^^^^^^^^^^
+  File "/home/yunqiliu/octo/examples/03_eval_finetuned_copy_copy.py", line 282, in main
+    {"rollout_video": wandb.Video(np.array(images).transpose(0, 3, 1, 2)[::2])}
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: axes don't match array
+iteration starts: we will sample actions
+finish sampling actions
+iteration starts: we will sample actions
+finish sampling actions
+iteration starts: we will sample actions
+finish sampling actions
+iteration starts: we will sample actions
+finish sampling actions
+iteration starts: we will sample actions
+finish sampling actions
+iteration starts: we will sample actions
+finish sampling actions
+iteration starts: we will sample actions
+finish sampling actions
+iteration starts: we will sample actions
+finish sampling actions
+iteration starts: we will sample actions
+finish sampling actions
+iteration starts: we will sample actions
+finish sampling actions
+Episode return: 0.0
+4097
