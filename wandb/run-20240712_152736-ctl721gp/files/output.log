@@ -1,0 +1,70 @@
+
+I0712 15:27:45.602488 136502442854208 03_eval_finetuned.py:52] Loading finetuned model...
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+I0712 15:27:48.771706 136502442854208 tokenizers.py:124] No task inputs matching image_primary were found. Replacing with zero padding.
+W0712 15:27:49.215400 136502442854208 block_transformer.py:295] Using old attention computation from released December models.
+I0712 15:27:52.429875 136502442854208 checkpointer.py:164] Restoring item from /home/yunqiliu/octo/finetuned_checkpoint/4999/default.
+I0712 15:27:53.083318 136502442854208 checkpointer.py:166] Finished restoring checkpoint from /home/yunqiliu/octo/finetuned_checkpoint/4999/default.
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/spaces/box.py:127: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/glfw/__init__.py:914: GLFWError: (65537) b'The GLFW library is not initialized'
+  warnings.warn(message, GLFWError)
+Traceback (most recent call last):
+  File "/home/yunqiliu/octo/examples/03_eval_finetuned.py", line 119, in <module>
+    app.run(main)
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/absl/app.py", line 308, in run
+    _run_main(main, args)
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/absl/app.py", line 254, in _run_main
+    sys.exit(main(argv))
+             ^^^^^^^^^^
+  File "/home/yunqiliu/octo/examples/03_eval_finetuned.py", line 88, in main
+    obs, info = env.reset()
+                ^^^^^^^^^^^
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/core.py", line 323, in reset
+    return self.env.reset(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunqiliu/octo/examples/octo/utils/gym_wrappers.py", line 112, in reset
+    obs, info = self.env.reset(**kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/core.py", line 379, in reset
+    obs, info = self.env.reset(**kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/wrappers/order_enforcing.py", line 42, in reset
+    return self.env.reset(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/wrappers/env_checker.py", line 45, in reset
+    return env_reset_passive_checker(self.env, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/utils/passive_env_checker.py", line 192, in env_reset_passive_checker
+    result = env.reset(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/yunqiliu/octo/examples/envs/aloha_sim_env.py", line 65, in reset
+    ts = self._env.reset(**kwargs)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/dm_control/rl/control.py", line 84, in reset
+    observation = self._task.get_observation(self._physics)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunqiliu/octo/examples/sim_env.py", line 111, in get_observation
+    obs['images']['top'] = physics.render(height=480, width=640, camera_id='top')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/dm_control/mujoco/engine.py", line 216, in render
+    camera = Camera(
+             ^^^^^^^
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/dm_control/mujoco/engine.py", line 695, in __init__
+    if self._physics.contexts.mujoco is not None:
+       ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/dm_control/mujoco/engine.py", line 526, in contexts
+    self._make_rendering_contexts()
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/dm_control/mujoco/engine.py", line 512, in _make_rendering_contexts
+    mujoco_context = wrapper.MjrContext(self.model, render_context)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/dm_control/mujoco/wrapper/core.py", line 603, in __init__
+    ptr = ctx.call(mujoco.MjrContext, model.ptr, font_scale)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/dm_control/_render/executor/render_executor.py", line 138, in call
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+mujoco.FatalError: gladLoadGL error

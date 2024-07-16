@@ -1,0 +1,20 @@
+I0710 14:25:19.333288 130880869943104 02_finetune_new_observation_action.py:59] Loading pre-trained model...
+Traceback (most recent call last):
+  File "/home/yunqiliu/octo/examples/02_finetune_new_observation_action.py", line 200, in <module>
+    app.run(main)
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/absl/app.py", line 308, in run
+    _run_main(main, args)
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/absl/app.py", line 254, in _run_main
+    sys.exit(main(argv))
+             ^^^^^^^^^^
+  File "/home/yunqiliu/octo/examples/02_finetune_new_observation_action.py", line 60, in main
+    pretrained_model = OctoModel.load_pretrained(FLAGS.pretrained_path)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunqiliu/octo/examples/octo/model/octo_model.py", line 289, in load_pretrained
+    tf.io.gfile.join(checkpoint_path, "config.json"), "r"
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/tensorflow/python/lib/io/file_io.py", line 816, in join
+    return os.path.join(path, *paths)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen posixpath>", line 76, in join
+TypeError: expected str, bytes or os.PathLike object, not NoneType

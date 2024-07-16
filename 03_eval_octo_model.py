@@ -117,8 +117,8 @@ def main(_):
                                            rng=jax.random.PRNGKey(0))
             #(1, 4, 7)
             actions = actions[0] 
+            #(4, 7)
             actions = jnp.clip(actions, -1.0, 1.0)
-
             actions = jnp.array(actions)
             actions_np = np.array(actions)
             action = torch.cat((torch.tensor(actions_np[0]), torch.tensor(actions_np[0])))

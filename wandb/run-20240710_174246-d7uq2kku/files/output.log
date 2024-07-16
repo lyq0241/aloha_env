@@ -1,0 +1,67 @@
+I0710 17:42:54.583657 136845696395072 03_eval_finetuned.py:48] Loading finetuned model...
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+I0710 17:42:58.245210 136845696395072 tokenizers.py:124] No task inputs matching image_primary were found. Replacing with zero padding.
+W0710 17:42:59.603377 136845696395072 block_transformer.py:295] Using old attention computation from released December models.
+I0710 17:43:01.241329 136845696395072 checkpointer.py:164] Restoring item from /home/yunqiliu/octo/finetuned_checkpoint/4999/default.
+I0710 17:43:01.914909 136845696395072 checkpointer.py:166] Finished restoring checkpoint from /home/yunqiliu/octo/finetuned_checkpoint/4999/default.
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/spaces/box.py:127: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/utils/passive_env_checker.py:137: UserWarning: [33mWARN: The obs returned by the `reset()` method was expecting a numpy array, actual type: <class 'tensorflow.python.framework.ops.EagerTensor'>
+  logger.warn(
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/spaces/box.py:227: UserWarning: [33mWARN: Casting input x to numpy array.
+  logger.warn("Casting input x to numpy array.")
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/utils/passive_env_checker.py:137: UserWarning: [33mWARN: The obs returned by the `reset()` method was expecting a numpy array, actual type: <class 'jaxlib.xla_extension.ArrayImpl'>
+  logger.warn(
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/utils/passive_env_checker.py:165: UserWarning: [33mWARN: The obs returned by the `reset()` method is not within the observation space.
+  logger.warn(f"{pre} is not within the observation space.")
+Fetching 8 files: 100%|███████████████████████████████████████████████████████| 8/8 [00:00<00:00, 58559.22it/s]
+W0710 17:43:04.149528 136845696395072 octo_model.py:545] 'observations' is missing items compared to example_batch: {'pad_mask_dict/proprio', 'timestep', 'task_completed', 'pad_mask_dict/image_primary', 'pad_mask_dict/timestep'}
+keys dict_keys(['image_primary', 'proprio', 'timestep_pad_mask'])
+example_batch['observation'].keys():dict_keys(['image_primary', 'image_wrist', 'pad_mask', 'pad_mask_dict', 'proprio', 'timestep'])
+I0710 17:43:05.359495 136845696395072 tokenizers.py:124] No task inputs matching image_primary were found. Replacing with zero padding.
+W0710 17:43:05.434830 136845696395072 tokenizers.py:25] No pad_mask_dict found. Nothing will be masked.
+W0710 17:43:05.498522 136845696395072 block_transformer.py:295] Using old attention computation from released December models.
+Traceback (most recent call last):
+  File "/home/yunqiliu/octo/examples/03_eval_finetuned.py", line 114, in <module>
+    app.run(main)
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/absl/app.py", line 308, in run
+    _run_main(main, args)
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/absl/app.py", line 254, in _run_main
+    sys.exit(main(argv))
+             ^^^^^^^^^^
+  File "/home/yunqiliu/octo/examples/03_eval_finetuned.py", line 95, in main
+    actions = policy_fn(jax.tree_map(lambda x: x[None], obs), task)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunqiliu/octo/examples/octo/utils/train_callbacks.py", line 143, in wrapped
+    return f(*args, rng=key, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunqiliu/octo/examples/octo/model/octo_model.py", line 216, in sample_actions
+    transformer_outputs = self.run_transformer(
+                          ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunqiliu/octo/examples/octo/model/octo_model.py", line 161, in run_transformer
+    return self.module.apply(
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/yunqiliu/octo/examples/octo/model/octo_module.py", line 277, in __call__
+    prefix_outputs, timestep_outputs = BlockTransformer(
+                                       ^^^^^^^^^^^^^^^^^
+  File "/home/yunqiliu/octo/examples/octo/model/components/block_transformer.py", line 173, in __call__
+    attention_mask = self.generate_attention_mask(prefix_groups, timestep_groups)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunqiliu/octo/examples/octo/model/components/block_transformer.py", line 332, in generate_attention_mask
+    pad_attention_mask = self.generate_pad_attention_mask(
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunqiliu/octo/examples/octo/model/components/block_transformer.py", line 355, in generate_pad_attention_mask
+    timestep_pad_mask = jnp.concatenate(
+                        ^^^^^^^^^^^^^^^^
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/jax/_src/numpy/lax_numpy.py", line 1854, in concatenate
+    arrays_out = [lax.concatenate(arrays_out[i:i+k], axis)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/jax/_src/numpy/lax_numpy.py", line 1854, in <listcomp>
+    arrays_out = [lax.concatenate(arrays_out[i:i+k], axis)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Cannot concatenate arrays with shapes that differ in dimensions other than the one being concatenated: concatenating along dimension 2 for shapes (1, 2, 256), (1, 2, 14), (1, 1, 1).
+--------------------
+For simplicity, JAX has removed its internal frames from the traceback of the following exception. Set JAX_TRACEBACK_FILTERING=off to include these.

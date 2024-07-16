@@ -1,0 +1,47 @@
+I0710 14:29:00.213019 129147586750272 02_finetune_new_observation_action.py:60] Loading pre-trained model...
+README.md: 100%|██████████████████████████████████████████████████████████████████████████| 3.75k/3.75k [00:00<00:00, 7.88MB/s]
+dataset_statistics.json: 100%|████████████████████████████████████████████████████████████| 17.3k/17.3k [00:00<00:00, 8.60MB/s]
+config.json: 100%|████████████████████████████████████████████████████████████████████████| 15.1k/15.1k [00:00<00:00, 4.10MB/s]
+.gitattributes: 100%|█████████████████████████████████████████████████████████████████████| 1.58k/1.58k [00:00<00:00, 3.37MB/s]
+example_batch.msgpack: 100%|████████████████████████████████████████████████████████████████| 738k/738k [00:00<00:00, 1.28MB/s]
+example_batch.msgpack: 100%|████████████████████████████████████████████████████████████████| 738k/738k [00:00<00:00, 1.29MB/s]
+checkpoint:   0%|                                                                                   | 0.00/810M [00:00<?, ?B/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+I0710 14:29:40.152756 129147586750272 octo_module.py:219] repeating task tokens at each timestep to perform cross-modal attention
+I0710 14:29:48.072204 129147586750272 checkpointer.py:164] Restoring item from /home/yunqiliu/.cache/huggingface/hub/models--rail-berkeley--octo-base-1.5/snapshots/ee3c10e8edd6ce2e8b1e8744d3c6fba4097bed48/300000/default.
+I0710 14:29:49.067930 129147586750272 checkpointer.py:166] Finished restoring checkpoint from /home/yunqiliu/.cache/huggingface/hub/models--rail-berkeley--octo-base-1.5/snapshots/ee3c10e8edd6ce2e8b1e8744d3c6fba4097bed48/300000/default.
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+This model is trained with a window size of 2, predicting 7 dimensional actions 4 steps into the future.
+Observations and tasks conform to the following spec:
+Observations: {
+    image_primary: ('batch', 'history_window', 256, 256, 3),
+    image_wrist: ('batch', 'history_window', 128, 128, 3),
+}
+Tasks: {
+    image_primary: ('batch', 256, 256, 3),
+    image_wrist: ('batch', 128, 128, 3),
+    language_instruction: {
+        attention_mask: ('batch', 16),
+        input_ids: ('batch', 16),
+    },
+}
+At inference, you may pass in any subset of these observation and task keys, with a history window up to 2 timesteps.

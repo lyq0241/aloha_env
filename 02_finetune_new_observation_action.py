@@ -6,6 +6,7 @@ To run this example, first download and extract the dataset from here: https://r
 
 python examples/02_finetune_new_observation_action.py --pretrained_path=hf://rail-berkeley/octo-small-1.5 --data_dir=...
 """
+#finetune octo small
 from absl import app, flags, logging
 import flax
 import jax
@@ -13,6 +14,7 @@ import optax
 import tensorflow as tf
 import tqdm
 import wandb
+import torch
 
 from octo.data.dataset import make_single_dataset
 from octo.model.components.action_heads import L1ActionHead
@@ -41,7 +43,7 @@ flags.DEFINE_bool(
     False,
     "Whether pre-trained transformer weights should be frozen.",
 )
-
+device=torch.device('cuda')
 
 def main(_):
     assert (
@@ -49,15 +51,15 @@ def main(_):
     ), "Batch size must be divisible by device count."
 
     initialize_compilation_cache()
-    # prevent tensorflow from using GPU memory since it's only used for data loading
-    tf.config.set_visible_devices([], "GPU")
 
     # setup wandb for logging
     wandb.init(name="finetune_aloha", project="octo")
 
     # load pre-trained model
     logging.info("Loading pre-trained model...")
-    pretrained_model = OctoModel.load_pretrained(FLAGS.pretrained_path)
+    #pretrained_model = OctoModel.load_pretrained(FLAGS.pretrained_path)
+    pretrained_model = OctoModel.load_pretrained("hf://rail-berkeley/octo-small")
+    print(pretrained_model.get_pretty_spec())
 
     # make finetuning dataset
     # apply Gaussian normalization, load chunks of 50 actions since we'll train with action chunking
@@ -193,7 +195,7 @@ def main(_):
             )
         if (i + 1) % 1000 == 0:
             # save checkpoint
-            train_state.model.save_pretrained(step=i, checkpoint_path=FLAGS.save_dir)
+            train_state.model.save_pretrained(step=i, checkpoint_path="/home/yunqiliu/octo/finetuned_checkpoint")
 
 
 if __name__ == "__main__":

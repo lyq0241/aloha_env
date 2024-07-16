@@ -1,3 +1,5 @@
+#This is the aloha sim env used for zero-shot evaluation of octo model. 
+
 import copy
 from typing import List
 
@@ -6,11 +8,11 @@ import gym
 import jax.numpy as jnp
 import numpy as np
 
-# need to put https://github.com/tonyzhaozh/act in your PATH for this import to work
+
 from sim_env import BOX_POSE, make_sim_env
 
 
-class AlohaGymEnvCopy(gym.Env):
+class AlohaGymEnv(gym.Env):
     def __init__(
         self,
         env: gym.Env,
@@ -27,7 +29,7 @@ class AlohaGymEnvCopy(gym.Env):
                         high=255 * np.ones((im_size, im_size, 3)),
                         dtype=np.uint8,
                     )
-                    for i in ["primary"]
+                    for i in ["primary", "wrist"][: len(camera_names)]
                 },
                 "proprio": gym.spaces.Box(
                     low=np.ones((14,)) * -1, high=np.ones((14,)), dtype=np.float32
@@ -49,6 +51,7 @@ class AlohaGymEnvCopy(gym.Env):
                 "observations":obs}
 
         if reward == self._env.task.max_reward:
+            print("the episode is successful!")
             self._episode_is_success = 1
 
         return obs, reward, False, False, info
@@ -67,7 +70,7 @@ class AlohaGymEnvCopy(gym.Env):
         ts = self._env.reset(**kwargs)
         obs, images = self.get_obs(ts)
         info = {"images": images,
-                "observations":obs}
+                 "observations":obs}
         self._episode_is_success = 0
 
         return obs, info
@@ -89,12 +92,18 @@ class AlohaGymEnvCopy(gym.Env):
         qpos_numpy = np.array(ts.observation["qpos"])
         qpos = jnp.array(qpos_numpy)
         curr_obs["proprio"] = qpos
-
+        curr_obs["image_primary"] = curr_obs["image_primary"].numpy().reshape((1, 1, self._im_size, self._im_size, 3))
+        curr_obs["image_primary"] = np.repeat(curr_obs["image_primary"], 2, axis=1)
+        '''curr_obs["proprio"] = curr_obs["proprio"].numpy().reshape((1, 1, 8))
+        curr_obs["proprio"] = np.repeat(curr_obs["proprio"], 2, axis=1)'''
+        additional_elements = np.random.randn(2)
+        proprio_extended = np.concatenate([np.array(curr_obs["proprio"]), additional_elements])
+        curr_obs["proprio"] = np.reshape(proprio_extended, (1, 2, 8))
         return curr_obs, np.concatenate(vis_images, axis=-2)
 
     def get_task(self):
         return {
-            "language_instruction": ["Move the can to the back right corner of the table"],
+            "language_instruction": ["pick up the cube and hand it over"],
         }
 
     def get_episode_metrics(self):
@@ -104,12 +113,12 @@ class AlohaGymEnvCopy(gym.Env):
 
 
 # register gym environments
-    gym.register(
-        "aloha-sim-cube-copy-v0",
-        entry_point=lambda: AlohaGymEnvCopy(
-            make_sim_env("sim_transfer_cube"), camera_names=["top"]
-        ),
-    )
+gym.register(
+    "aloha-sim-cube-v0",
+    entry_point=lambda: AlohaGymEnv(
+        make_sim_env("sim_transfer_cube"), camera_names=["top"]
+    ),
+)
 
 '''
 observation

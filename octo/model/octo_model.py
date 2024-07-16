@@ -198,20 +198,8 @@ class OctoModel:
         Returns:
             actions: (*sample_shape, batch_size, action_horizon, action_dim)
         """
-        checkpoint_path="hf://rail-berkeley/octo-small"
-        if checkpoint_path and checkpoint_path.startswith("hf://"):
-            checkpoint_path = _download_from_huggingface(
-                checkpoint_path.removeprefix("hf://")
-            )
-        with tf.io.gfile.GFile(
-           tf.io.gfile.join(checkpoint_path, "example_batch.msgpack"), "rb"
-        ) as f:
-            example_batch = flax.serialization.msgpack_restore(f.read())
         if timestep_pad_mask is None:
-            print("keys", observations.keys())
-            print(f"example_batch['observation'].keys():{example_batch['observation'].keys()}")
-            timestep_pad_mask = example_batch["observation"]["pad_mask"]
-            #timestep_pad_mask = observations["timestep_pad_mask"]
+            timestep_pad_mask = observations["timestep_pad_mask"]
 
         transformer_outputs = self.run_transformer(
             observations, tasks, timestep_pad_mask, train=train
@@ -275,7 +263,7 @@ class OctoModel:
             checkpoint_path (str): A path to either a directory of checkpoints or a single checkpoint.
             step (int, optional): If multiple checkpoints are present, which one to load. Defaults to the latest.
         """
-        if checkpoint_path and checkpoint_path.startswith("hf://"):
+        if checkpoint_path.startswith("hf://"):
             if step:
                 raise ValueError(
                     "You can't set config['pretrained_step'] when loading from HuggingFace."

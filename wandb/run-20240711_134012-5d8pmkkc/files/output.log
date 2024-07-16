@@ -1,0 +1,37 @@
+I0711 13:40:20.155496 126516197394240 03_eval_finetuned.py:48] Loading finetuned model...
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+I0711 13:40:23.631091 126516197394240 tokenizers.py:124] No task inputs matching image_primary were found. Replacing with zero padding.
+W0711 13:40:24.617042 126516197394240 block_transformer.py:295] Using old attention computation from released December models.
+I0711 13:40:26.336247 126516197394240 checkpointer.py:164] Restoring item from /home/yunqiliu/octo/finetuned_checkpoint/4999/default.
+I0711 13:40:27.031364 126516197394240 checkpointer.py:166] Finished restoring checkpoint from /home/yunqiliu/octo/finetuned_checkpoint/4999/default.
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/spaces/box.py:127: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/utils/passive_env_checker.py:137: UserWarning: [33mWARN: The obs returned by the `reset()` method was expecting a numpy array, actual type: <class 'tensorflow.python.framework.ops.EagerTensor'>
+  logger.warn(
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/spaces/box.py:227: UserWarning: [33mWARN: Casting input x to numpy array.
+  logger.warn("Casting input x to numpy array.")
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/utils/passive_env_checker.py:137: UserWarning: [33mWARN: The obs returned by the `reset()` method was expecting a numpy array, actual type: <class 'jaxlib.xla_extension.ArrayImpl'>
+  logger.warn(
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/utils/passive_env_checker.py:165: UserWarning: [33mWARN: The obs returned by the `reset()` method is not within the observation space.
+  logger.warn(f"{pre} is not within the observation space.")
+W0711 13:40:29.018876 126516197394240 octo_model.py:533] 'observations' is missing items compared to example_batch: {'pad_mask_dict/timestep', 'pad_mask_dict/proprio', 'timestep', 'task_completed', 'pad_mask_dict/image_primary'}
+I0711 13:40:30.027269 126516197394240 tokenizers.py:124] No task inputs matching image_primary were found. Replacing with zero padding.
+W0711 13:40:30.084310 126516197394240 tokenizers.py:25] No pad_mask_dict found. Nothing will be masked.
+W0711 13:40:30.130013 126516197394240 block_transformer.py:295] Using old attention computation from released December models.
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/utils/passive_env_checker.py:233: DeprecationWarning: `np.bool8` is a deprecated alias for `np.bool_`.  (Deprecated NumPy 1.24)
+  if not isinstance(terminated, (bool, np.bool8)):
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/utils/passive_env_checker.py:137: UserWarning: [33mWARN: The obs returned by the `step()` method was expecting a numpy array, actual type: <class 'tensorflow.python.framework.ops.EagerTensor'>
+  logger.warn(
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/utils/passive_env_checker.py:137: UserWarning: [33mWARN: The obs returned by the `step()` method was expecting a numpy array, actual type: <class 'jaxlib.xla_extension.ArrayImpl'>
+  logger.warn(
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/gym/utils/passive_env_checker.py:165: UserWarning: [33mWARN: The obs returned by the `step()` method is not within the observation space.
+  logger.warn(f"{pre} is not within the observation space.")
+Episode return: 658.0
+succuess rate:{'success_rate': 1}
+Episode return: 660.0
+succuess rate:{'success_rate': 1}
+Episode return: 666.0
+succuess rate:{'success_rate': 1}

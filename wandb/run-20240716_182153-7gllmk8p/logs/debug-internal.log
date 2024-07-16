@@ -1,0 +1,86 @@
+2024-07-16 18:21:53,522 INFO    StreamThr :668881 [internal.py:wandb_internal():85] W&B internal server running at pid: 668881, started at: 2024-07-16 18:21:53.521631
+2024-07-16 18:21:53,525 DEBUG   HandlerThread:668881 [handler.py:handle_request():158] handle_request: status
+2024-07-16 18:21:53,529 INFO    WriterThread:668881 [datastore.py:open_for_write():87] open: /home/yunqiliu/octo/examples/wandb/run-20240716_182153-7gllmk8p/run-7gllmk8p.wandb
+2024-07-16 18:21:53,530 DEBUG   SenderThread:668881 [sender.py:send():379] send: header
+2024-07-16 18:21:53,540 DEBUG   SenderThread:668881 [sender.py:send():379] send: run
+2024-07-16 18:21:54,209 INFO    SenderThread:668881 [dir_watcher.py:__init__():211] watching files in: /home/yunqiliu/octo/examples/wandb/run-20240716_182153-7gllmk8p/files
+2024-07-16 18:21:54,209 INFO    SenderThread:668881 [sender.py:_start_run_threads():1188] run started: 7gllmk8p with start time 1721125313.521983
+2024-07-16 18:21:54,228 DEBUG   HandlerThread:668881 [handler.py:handle_request():158] handle_request: check_version
+2024-07-16 18:21:54,229 DEBUG   SenderThread:668881 [sender.py:send_request():406] send_request: check_version
+2024-07-16 18:21:54,531 DEBUG   HandlerThread:668881 [handler.py:handle_request():158] handle_request: run_start
+2024-07-16 18:21:54,548 DEBUG   HandlerThread:668881 [system_info.py:__init__():26] System info init
+2024-07-16 18:21:54,548 DEBUG   HandlerThread:668881 [system_info.py:__init__():41] System info init done
+2024-07-16 18:21:54,548 INFO    HandlerThread:668881 [system_monitor.py:start():194] Starting system monitor
+2024-07-16 18:21:54,549 INFO    SystemMonitor:668881 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-07-16 18:21:54,549 INFO    HandlerThread:668881 [system_monitor.py:probe():214] Collecting system info
+2024-07-16 18:21:54,550 INFO    SystemMonitor:668881 [interfaces.py:start():188] Started cpu monitoring
+2024-07-16 18:21:54,551 INFO    SystemMonitor:668881 [interfaces.py:start():188] Started disk monitoring
+2024-07-16 18:21:54,553 INFO    SystemMonitor:668881 [interfaces.py:start():188] Started gpu monitoring
+2024-07-16 18:21:54,554 INFO    SystemMonitor:668881 [interfaces.py:start():188] Started memory monitoring
+2024-07-16 18:21:54,557 INFO    SystemMonitor:668881 [interfaces.py:start():188] Started network monitoring
+2024-07-16 18:21:54,583 DEBUG   HandlerThread:668881 [system_info.py:probe():152] Probing system
+2024-07-16 18:21:54,587 DEBUG   HandlerThread:668881 [system_info.py:_probe_git():137] Probing git
+2024-07-16 18:21:54,596 DEBUG   HandlerThread:668881 [system_info.py:_probe_git():145] Probing git done
+2024-07-16 18:21:54,596 DEBUG   HandlerThread:668881 [system_info.py:probe():200] Probing system done
+2024-07-16 18:21:54,596 DEBUG   HandlerThread:668881 [system_monitor.py:probe():223] {'os': 'Linux-6.5.0-41-generic-x86_64-with-glibc2.35', 'python': '3.11.9', 'heartbeatAt': '2024-07-16T10:21:54.583325', 'startedAt': '2024-07-16T10:21:53.506863', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/yunqiliu/octo/examples/02_finetune_new_observation_action.py', 'codePathLocal': '02_finetune_new_observation_action.py', 'codePath': '02_finetune_new_observation_action.py', 'git': {'remote': 'https://github.com/lyq0241/aloha_env.git', 'commit': 'e38b36e690a73f689f18fc1a2f94c5018d1faf8a'}, 'email': 'yunqiliu@andrew.cmu.edu', 'root': '/home/yunqiliu/octo/examples', 'host': 'msrait-03', 'username': 'yunqiliu', 'executable': '/home/yunqiliu/anaconda3/envs/torch/bin/python', 'cpu_count': 32, 'cpu_count_logical': 64, 'cpu_freq': {'current': 1060.5367500000002, 'min': 800.0, 'max': 3400.0}, 'cpu_freq_per_core': [{'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.668, 'min': 800.0, 'max': 3400.0}, {'current': 2200.318, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 2100.911, 'min': 800.0, 'max': 3400.0}, {'current': 2100.75, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 2200.0, 'min': 800.0, 'max': 3400.0}, {'current': 2200.0, 'min': 800.0, 'max': 3400.0}, {'current': 2200.766, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 1400.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.241, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.517, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 1600.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 1500.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 1231.277, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 2200.091, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.544, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 3400.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}, {'current': 800.0, 'min': 800.0, 'max': 3400.0}], 'disk': {'/': {'total': 1632.7536506652832, 'used': 296.1718101501465}}, 'gpu': 'NVIDIA RTX A6000', 'gpu_count': 4, 'gpu_devices': [{'name': 'NVIDIA RTX A6000', 'memory_total': 51527024640}, {'name': 'NVIDIA RTX A6000', 'memory_total': 51527024640}, {'name': 'NVIDIA RTX A6000', 'memory_total': 51527024640}, {'name': 'NVIDIA RTX A6000', 'memory_total': 51527024640}], 'memory': {'total': 377.24077224731445}}
+2024-07-16 18:21:54,596 INFO    HandlerThread:668881 [system_monitor.py:probe():224] Finished collecting system info
+2024-07-16 18:21:54,596 INFO    HandlerThread:668881 [system_monitor.py:probe():227] Publishing system info
+2024-07-16 18:21:54,596 DEBUG   HandlerThread:668881 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2024-07-16 18:21:55,212 INFO    Thread-12 :668881 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yunqiliu/octo/examples/wandb/run-20240716_182153-7gllmk8p/files/conda-environment.yaml
+2024-07-16 18:22:01,829 DEBUG   HandlerThread:668881 [system_info.py:_save_conda():224] Saving conda packages done
+2024-07-16 18:22:01,831 INFO    HandlerThread:668881 [system_monitor.py:probe():229] Finished publishing system info
+2024-07-16 18:22:01,860 DEBUG   HandlerThread:668881 [handler.py:handle_request():158] handle_request: status_report
+2024-07-16 18:22:01,861 DEBUG   HandlerThread:668881 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-16 18:22:01,862 DEBUG   SenderThread:668881 [sender.py:send():379] send: files
+2024-07-16 18:22:01,862 INFO    SenderThread:668881 [sender.py:_save_file():1454] saving file wandb-metadata.json with policy now
+2024-07-16 18:22:02,067 DEBUG   HandlerThread:668881 [handler.py:handle_request():158] handle_request: python_packages
+2024-07-16 18:22:02,068 DEBUG   HandlerThread:668881 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-16 18:22:02,068 DEBUG   SenderThread:668881 [sender.py:send_request():406] send_request: python_packages
+2024-07-16 18:22:02,068 DEBUG   HandlerThread:668881 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 18:22:02,071 DEBUG   SenderThread:668881 [sender.py:send_request():406] send_request: stop_status
+2024-07-16 18:22:02,212 INFO    Thread-12 :668881 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240716_182153-7gllmk8p/files/conda-environment.yaml
+2024-07-16 18:22:02,213 INFO    Thread-12 :668881 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yunqiliu/octo/examples/wandb/run-20240716_182153-7gllmk8p/files/wandb-metadata.json
+2024-07-16 18:22:02,213 INFO    Thread-12 :668881 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yunqiliu/octo/examples/wandb/run-20240716_182153-7gllmk8p/files/requirements.txt
+2024-07-16 18:22:02,486 DEBUG   SenderThread:668881 [sender.py:send():379] send: telemetry
+2024-07-16 18:22:02,947 INFO    wandb-upload_0:668881 [upload_job.py:push():130] Uploaded file /tmp/tmpxosloxszwandb/5sglc5nw-wandb-metadata.json
+2024-07-16 18:22:03,065 DEBUG   HandlerThread:668881 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 18:22:03,213 INFO    Thread-12 :668881 [dir_watcher.py:_on_file_created():271] file/dir created: /home/yunqiliu/octo/examples/wandb/run-20240716_182153-7gllmk8p/files/output.log
+2024-07-16 18:22:03,453 DEBUG   SenderThread:668881 [sender.py:send():379] send: telemetry
+2024-07-16 18:22:04,065 DEBUG   HandlerThread:668881 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 18:22:04,988 DEBUG   HandlerThread:668881 [handler.py:handle_request():158] handle_request: status_report
+2024-07-16 18:22:05,214 INFO    Thread-12 :668881 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240716_182153-7gllmk8p/files/output.log
+2024-07-16 18:22:05,294 DEBUG   HandlerThread:668881 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 18:22:06,353 DEBUG   HandlerThread:668881 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 18:22:07,412 DEBUG   HandlerThread:668881 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 18:22:08,352 DEBUG   HandlerThread:668881 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 18:22:09,215 INFO    Thread-12 :668881 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240716_182153-7gllmk8p/files/output.log
+2024-07-16 18:22:09,384 DEBUG   HandlerThread:668881 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 18:22:10,068 DEBUG   HandlerThread:668881 [handler.py:handle_request():158] handle_request: status_report
+2024-07-16 18:22:10,388 DEBUG   HandlerThread:668881 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 18:22:11,445 DEBUG   HandlerThread:668881 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 18:22:12,474 DEBUG   HandlerThread:668881 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 18:22:13,421 DEBUG   HandlerThread:668881 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 18:22:14,713 DEBUG   HandlerThread:668881 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 18:22:15,218 INFO    Thread-12 :668881 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240716_182153-7gllmk8p/files/output.log
+2024-07-16 18:22:15,706 DEBUG   HandlerThread:668881 [handler.py:handle_request():158] handle_request: status_report
+2024-07-16 18:22:15,710 DEBUG   HandlerThread:668881 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 18:22:16,731 DEBUG   HandlerThread:668881 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 18:22:17,066 DEBUG   HandlerThread:668881 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-16 18:22:17,067 DEBUG   SenderThread:668881 [sender.py:send_request():406] send_request: stop_status
+2024-07-16 18:22:17,219 INFO    Thread-12 :668881 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240716_182153-7gllmk8p/files/output.log
+2024-07-16 18:22:17,722 DEBUG   HandlerThread:668881 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 18:22:18,220 INFO    Thread-12 :668881 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240716_182153-7gllmk8p/files/output.log
+2024-07-16 18:22:19,158 DEBUG   HandlerThread:668881 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 18:22:19,220 INFO    Thread-12 :668881 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240716_182153-7gllmk8p/files/output.log
+2024-07-16 18:22:19,715 DEBUG   HandlerThread:668881 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 18:22:20,715 DEBUG   HandlerThread:668881 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 18:22:21,487 DEBUG   HandlerThread:668881 [handler.py:handle_request():158] handle_request: status_report
+2024-07-16 18:22:21,715 DEBUG   HandlerThread:668881 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 18:22:22,716 DEBUG   HandlerThread:668881 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-16 18:22:27,430 DEBUG   HandlerThread:668881 [handler.py:handle_request():158] handle_request: status_report
+2024-07-16 18:22:28,224 INFO    Thread-12 :668881 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/yunqiliu/octo/examples/wandb/run-20240716_182153-7gllmk8p/files/config.yaml
+2024-07-16 18:22:32,693 DEBUG   HandlerThread:668881 [handler.py:handle_request():158] handle_request: status_report
+2024-07-16 18:22:37,694 DEBUG   HandlerThread:668881 [handler.py:handle_request():158] handle_request: status_report
+2024-07-16 18:22:42,532 WARNING StreamThr :668881 [internal.py:is_dead():413] Internal process exiting, parent pid 668492 disappeared
+2024-07-16 18:22:42,532 ERROR   StreamThr :668881 [internal.py:wandb_internal():151] Internal process shutdown.
+2024-07-16 18:22:42,543 INFO    MainThread:668881 [internal.py:handle_exit():75] Internal process exited

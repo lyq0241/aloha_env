@@ -6,7 +6,8 @@ import gym
 import jax.numpy as jnp
 import numpy as np
 
-# need to put https://github.com/tonyzhaozh/act in your PATH for this import to work
+
+#This is the aloha sim env used for zero-shot evaluation of our mistral_vla model
 from sim_env import BOX_POSE, make_sim_env
 
 

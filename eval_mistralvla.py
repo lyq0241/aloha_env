@@ -1,23 +1,10 @@
 """
-This script demonstrates how to load and rollout a finetuned Octo model.
-We use the Octo model finetuned on ALOHA sim data from the examples/02_finetune_new_observation_action.py script.
+This script demonstrates how to load and rollout our mistral_vla model.
+We use the mistral_vla model from "robot-pipeline" and we use aloha_sim_env_copy as the sim environment.
 
-For installing the ALOHA sim environment, clone: https://github.com/tonyzhaozh/act
-Then run:
-pip3 install opencv-python modern_robotics pyrealsense2 h5py_cache pyquaternion pyyaml rospkg pexpect mujoco==2.3.3 dm_control==1.0.9 einops packaging h5py
-
-Finally, modify the `sys.path.append` statement below to add the ACT repo to your path.
-If you are running this on a head-less server, start a virtual display:
-    Xvfb :1 -screen 0 1024x768x16 &
-    export DISPLAY=:1
-
-run in the terminal:
+run this in the terminal before you run eval_mistralvla.py:
 export MUJOCO_GL=egl
-echo $MUJOCO_GL
-    
-To run this script, run:
-    cd examples
-    python3 03_eval_finetuned.py --finetuned_path=<path_to_finetuned_aloha_checkpoint>
+echo $MUJOCO_GL  
 """
 from functools import partial
 import sys
@@ -44,7 +31,7 @@ sys.path.append("path/to/your/act")
 # keep this to register ALOHA sim env
 from envs.aloha_sim_env_copy import AlohaGymEnvCopy  # noqa
 
-from octo.model.octo_model_torch import OctoModel
+#from octo_modified.model.octo_model_torch import OctoModel
 from octo.utils.gym_wrappers import HistoryWrapper, NormalizeProprio, RHCWrapper
 from octo.utils.train_callbacks import supply_rng
 script_path = '/home/yunqiliu/octo/examples/robot-pipeline'
@@ -63,11 +50,13 @@ flags.DEFINE_string(
     "finetuned_path", None, "Path to finetuned Octo checkpoint directory."
 )
 
+#fn:action->action
 def sample_actions(actions, metadata, model_vq, model_vla, tokenizer, device):
     print("start sampling actions")
     output_data = {}
     pred_descriptions = {}
     pred_actions = torch.empty(0, 7)
+    #这下面的image_format没有用，我们的image是通过aloha sim env进行initialize
     image_format = '/home/v-rundongluo/robotdata/' + \
                     ('bridge2/images_bridge') + \
                     '/outputimage_' + str(metadata['trajectory_id']) + \
@@ -138,6 +127,7 @@ def main(_):
     lines = f.readlines()
     f.close()
     metadata={}
+    #metadata用来储存在运行过程中不变的量。action是变化的，不过metadata["action"]代表的是action的初始值
 
     for line in lines:
         '''
@@ -154,6 +144,7 @@ def main(_):
                     '/outputimage_' + str(instance_data['trajectory_id']) + \
                     (('_{}_' + str(instance_data['view'])) if data_args.dataset_name == 'bridge2' else '_{}') + \
                     '.png'
+        #image_format没有用
         
         
         metadata['task_description'] = instance_data['task_description']
@@ -240,7 +231,7 @@ def main(_):
             #cur_instance_data = call_models(cur_instance_data, model_vq, model_vla, tokenizer, tats_args, data_args, device)
             print("iteration starts: we will sample actions")
             actions = sample_actions(actions, metadata, model_vq, model_vla, tokenizer, device)
-            #actions = torch.randn(6, 7)
+            #actions (6, 7)
             print("finish sampling actions")
 
             # step env -- info contains full "chunk" of observations for logging

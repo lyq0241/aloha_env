@@ -1,0 +1,30 @@
+I0716 18:22:02.065865 125104424314688 02_finetune_new_observation_action.py:59] Loading pre-trained model...
+Fetching 8 files: 100%|████████████████████████████████████████████████████████████████████████| 8/8 [00:00<00:00, 5096.36it/s]
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+W0716 18:22:06.086531 125104424314688 block_transformer.py:295] Using old attention computation from released December models.
+I0716 18:22:13.747799 125104424314688 checkpointer.py:164] Restoring item from /home/yunqiliu/.cache/huggingface/hub/models--rail-berkeley--octo-small/snapshots/03d88976c54a58e10480d2043a8c762b35bc2611/270000/default.
+I0716 18:22:14.714474 125104424314688 checkpointer.py:166] Finished restoring checkpoint from /home/yunqiliu/.cache/huggingface/hub/models--rail-berkeley--octo-small/snapshots/03d88976c54a58e10480d2043a8c762b35bc2611/270000/default.
+/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/huggingface_hub/file_download.py:1132: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+I0716 18:22:15.702093 125104424314688 02_finetune_new_observation_action.py:68] Loading finetuning dataset...
+I0716 18:22:15.711582 125104424314688 dataset_info.py:578] Load dataset info from /home/yunqiliu/tensorflow_datasets/aloha_sim_cube_scripted_dataset/1.0.0
+I0716 18:22:15.981843 125104424314688 logging_logger.py:49] Constructing tf.data.Dataset aloha_sim_cube_scripted_dataset for split all, from /home/yunqiliu/tensorflow_datasets/aloha_sim_cube_scripted_dataset/1.0.0
+This model is trained with a window size of 2, predicting 7 dimensional actions 4 steps into the future.
+Observations and tasks conform to the following spec:
+Observations: {
+    image_primary: ('batch', 'history_window', 256, 256, 3),
+    image_wrist: ('batch', 'history_window', 128, 128, 3),
+}
+Tasks: {
+    image_primary: ('batch', 256, 256, 3),
+    image_wrist: ('batch', 128, 128, 3),
+    language_instruction: {
+        attention_mask: ('batch', 16),
+        input_ids: ('batch', 16),
+    },
+}
+At inference, you may pass in any subset of these observation and task keys, with a history window up to 2 timesteps.
+I0716 18:22:16.730304 125104424314688 function_wrappers.py:112] Sampling uniformly across keys: ['language_instruction']
+I0716 18:22:16.951796 125104424314688 data_utils.py:113] Loading existing dataset statistics from /home/yunqiliu/tensorflow_datasets/aloha_sim_cube_scripted_dataset/1.0.0/dataset_statistics_6e9a30171a12844cc8c8c309ca19f52e9b09ba3dce8b5c743bb122a40baba07c.json.
+I0716 18:22:17.011012 125104424314688 logging_logger.py:49] Constructing tf.data.Dataset aloha_sim_cube_scripted_dataset for split train[:95%], from /home/yunqiliu/tensorflow_datasets/aloha_sim_cube_scripted_dataset/1.0.0

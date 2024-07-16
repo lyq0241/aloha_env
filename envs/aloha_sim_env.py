@@ -45,15 +45,12 @@ class AlohaGymEnv(gym.Env):
         ts = self._env.step(action)
         obs, images = self.get_obs(ts)
         reward = ts.reward
-        info = {"images": images,
-                "observations":obs}
+        info = {"images": images}
 
         if reward == self._env.task.max_reward:
-            print("the episode is successful!")
             self._episode_is_success = 1
 
         return obs, reward, False, False, info
-    #obs, reward, done, trunc, info
 
     def reset(self, **kwargs):
         # sample new box pose
@@ -62,13 +59,12 @@ class AlohaGymEnv(gym.Env):
         z_range = [0.05, 0.05]
         ranges = np.vstack([x_range, y_range, z_range])
         cube_position = self._rng.uniform(ranges[:, 0], ranges[:, 1])
-        cube_quat = np.array([1, 0, 0, 0])   
+        cube_quat = np.array([1, 0, 0, 0])
         BOX_POSE[0] = np.concatenate([cube_position, cube_quat])
 
         ts = self._env.reset(**kwargs)
         obs, images = self.get_obs(ts)
-        info = {"images": images,
-                 "observations":obs}
+        info = {"images": images}
         self._episode_is_success = 0
 
         return obs, info
@@ -90,18 +86,12 @@ class AlohaGymEnv(gym.Env):
         qpos_numpy = np.array(ts.observation["qpos"])
         qpos = jnp.array(qpos_numpy)
         curr_obs["proprio"] = qpos
-        curr_obs["image_primary"] = curr_obs["image_primary"].numpy().reshape((1, 1, self._im_size, self._im_size, 3))
-        curr_obs["image_primary"] = np.repeat(curr_obs["image_primary"], 2, axis=1)
-        '''curr_obs["proprio"] = curr_obs["proprio"].numpy().reshape((1, 1, 8))
-        curr_obs["proprio"] = np.repeat(curr_obs["proprio"], 2, axis=1)'''
-        additional_elements = np.random.randn(2)
-        proprio_extended = np.concatenate([np.array(curr_obs["proprio"]), additional_elements])
-        curr_obs["proprio"] = np.reshape(proprio_extended, (1, 2, 8))
+
         return curr_obs, np.concatenate(vis_images, axis=-2)
 
     def get_task(self):
         return {
-            "language_instruction": ["pick up the cube and hand it over"],
+            "language_instruction": ["place the can at the back left corner of the table"],
         }
 
     def get_episode_metrics(self):
@@ -117,25 +107,3 @@ gym.register(
         make_sim_env("sim_transfer_cube"), camera_names=["top"]
     ),
 )
-
-'''
-observation
-{
-    "image_primary": np.array([...]),  # An array representing the primary image observation
-    "proprio": np.array([...]),        # An array representing proprioceptive data
-}
-
-ts = {
-    "observation": {
-        "images": {
-            "top": np.array(...),  # Image from the top camera
-            "wrist": np.array(...),  # Image from the wrist camera
-        },
-        "qpos": np.array(...),  # Proprioceptive data (e.g., joint positions)
-    },
-    "reward": 1.0,  # Reward received for the action
-    "done": False,  # Episode has not ended
-    "trunc": False,  # Episode was not truncated
-    "info": {}  # Additional information (if any)
-}
-'''

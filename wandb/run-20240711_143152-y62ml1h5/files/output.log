@@ -1,0 +1,24 @@
+I0711 14:32:00.496776 125840628504384 finetune_mistral_vla.py:95] Loading pre-trained model...
+Loading checkpoint shards: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:02<00:00,  1.26it/s]
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+I0711 14:32:05.214450 125840628504384 finetune_mistral_vla.py:107] finish loading our model....
+I0711 14:32:05.214744 125840628504384 finetune_mistral_vla.py:113] Loading finetuning dataset...
+I0711 14:32:05.221207 125840628504384 dataset_info.py:578] Load dataset info from /home/yunqiliu/tensorflow_datasets/aloha_sim_cube_scripted_dataset/1.0.0
+I0711 14:32:05.761865 125840628504384 logging_logger.py:49] Constructing tf.data.Dataset aloha_sim_cube_scripted_dataset for split all, from /home/yunqiliu/tensorflow_datasets/aloha_sim_cube_scripted_dataset/1.0.0
+I0711 14:32:06.496793 125840628504384 function_wrappers.py:112] Sampling uniformly across keys: ['language_instruction']
+I0711 14:32:06.718371 125840628504384 data_utils.py:113] Loading existing dataset statistics from /home/yunqiliu/tensorflow_datasets/aloha_sim_cube_scripted_dataset/1.0.0/dataset_statistics_6e9a30171a12844cc8c8c309ca19f52e9b09ba3dce8b5c743bb122a40baba07c.json.
+I0711 14:32:06.756824 125840628504384 logging_logger.py:49] Constructing tf.data.Dataset aloha_sim_cube_scripted_dataset for split train[:95%], from /home/yunqiliu/tensorflow_datasets/aloha_sim_cube_scripted_dataset/1.0.0
+I0711 14:32:06.812065 125840628504384 function_wrappers.py:112] Sampling uniformly across keys: ['language_instruction']
+Traceback (most recent call last):
+  File "/home/yunqiliu/octo/examples/finetune_mistral_vla.py", line 247, in <module>
+    app.run(main)
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/absl/app.py", line 308, in run
+    _run_main(main, args)
+  File "/home/yunqiliu/anaconda3/envs/torch/lib/python3.11/site-packages/absl/app.py", line 254, in _run_main
+    sys.exit(main(argv))
+             ^^^^^^^^^^
+  File "/home/yunqiliu/octo/examples/finetune_mistral_vla.py", line 140, in main
+    text_processor = pretrained_model.text_processor
+                     ^^^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'pretrained_model' where it is not associated with a value
