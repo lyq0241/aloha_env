@@ -1,4 +1,5 @@
 ## Simulation Environment to Eval and Finetune VLA Models
+
 ![Rollout Demo](https://github.com/lyq0241/aloha_env/raw/main/assets/rollout_video_0_36ce4a4640ac0a49b2b9.gif)
 
 The video above demonstrates the inference process of a VLA model using the Aloha simulation environment.  
